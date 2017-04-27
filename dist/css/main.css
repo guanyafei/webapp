@@ -6784,7 +6784,7 @@ button.close {
   position: absolute;
   top: 0;
   right: 0;
-  background: url(../images/mask.png) no-repeat;
+  background: url(../images/index/mask.png) no-repeat;
 }
 .nav .go span {
   float: right;
@@ -6804,6 +6804,7 @@ button.close {
   width: 100%;
   margin-left: 0;
   padding: 0.64rem 0.8rem;
+  line-height: 1;
   list-style: none;
   text-align: right;
 }
@@ -6822,11 +6823,107 @@ button.close {
   left: 0;
   bottom: 0;
   width: 100%;
+  line-height: 1;
   color: white;
   padding: 0.64rem 0.8rem;
   text-align: left;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.5);
+}
+.box .outer {
+  overflow: hidden;
+  padding: 1.2rem 0;
+  border-bottom: 0.04rem solid #f7f7f7;
+}
+.box .outer .content {
+  height: 6rem;
+}
+.box .outer .content .imgs {
+  float: left;
+}
+.box .outer .content .imgs img {
+  width: 8.4rem;
+}
+.box .outer .content .news {
+  height: 6rem;
+  width: 100%;
+  padding-left: 9.68rem;
+}
+.box .outer .content .news .top {
+  height: 4.96rem;
+}
+.box .outer .content .news .bottom {
+  height: calc(1.04rem);
+  color: #b4b4b4;
+}
+.box .outer .content .news .bottom .category {
+  float: left;
+}
+.box .outer .content .news .bottom .time {
+  float: right;
+}
+.box .outer .bigTop {
+  margin-bottom: 1.2rem;
+}
+.box .outer .bigImg {
+  width: 28.4rem;
+  height: 14rem;
+}
+.box .outer .bigTime {
+  color: #b4b4b4;
+  margin-top: 1.2rem;
+}
+.box .outer .bigTime .category {
+  float: left;
+}
+.box .outer .bigTime .time {
+  float: right;
+}
+.box .outer .middleImg {
+  overflow: hidden;
+}
+.box .outer .middleImg img {
+  float: left;
+  display: block;
+  width: 9.12rem;
+  height: 6.88rem;
+  padding-right: 0.8rem;
+}
+.links {
+  background-color: #595959;
+  padding: 0.72rem 0;
+}
+.links span {
+  display: inline-block;
+  margin: 0.48rem 1.2rem;
+  color: #b0b0b0;
+}
+.links p {
+  margin: 0 1.2rem;
+  color: #898989;
+}
+.footer a {
+  display: inline-block;
+  width: 32.772222222%;
+  padding-top: 2.72rem;
+  padding-bottom: 0.48rem;
+  text-align: center;
+  position: relative;
+}
+.footer a i {
+  position: absolute;
+  top: 0.56rem;
+  left: 42%;
+  font-size: 1.5rem;
+}
+.back {
+  position: fixed;
+  right: 0.8rem;
+  bottom: 4.8rem;
+}
+.back img {
+  width: 3.12rem;
+  height: 3.12rem;
 }
 .container-fluid {
   margin: 0 0;
@@ -6838,8 +6935,11 @@ html {
 a {
   color: #000000;
 }
+body {
+  font-size: 12.5px;
+}
 .w {
-  margin: 0px 0.8rem;
+  margin: 0 0.8rem;
 }
 html,
 body,
@@ -6904,14 +7004,14 @@ img {
 table {
   border-collapse: collapse;
 }
-/* .clearfix:after{
-    content: "";
-    height: 0;
-    line-height: 0;
-    clear: both;
-    display: block;
-    visibility: hidden;
+/*  .clearfix:after{
+   content: "";
+   height: 0;
+   line-height: 0;
+   clear: both;
+   display: block;
+   visibility: hidden;
 }
 .clearfix{
-	 zoom: 1;
-} */
+    zoom: 1;
+}  */

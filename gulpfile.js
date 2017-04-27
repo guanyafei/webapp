@@ -77,11 +77,11 @@ gulp.task('html', () => {
 });
 
 //删除dist文件夹
-/*gulp.task('del', function (callback) {
+gulp.task('del', function (callback) {
   gulp.src('./dist', {read: false})
     .pipe(clean());
     callback();
-});*/
+});
 
 gulp.task('watch-html', ['html'], (callback) => {
     browserSync.reload();

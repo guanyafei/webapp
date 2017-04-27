@@ -63,7 +63,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        background: url(../images/mask.png) no-repeat;
+        background: url(../images/index/mask.png) no-repeat;
         span {
             float: right;
             margin-right: 30rem/@fs;
@@ -86,6 +86,7 @@
             width: 100%;
             margin-left: 0;
             padding: 16rem/@fs 20rem/@fs;
+            line-height: 1;
             list-style: none;
             text-align: right;
             li {
@@ -107,6 +108,7 @@
                 left: 0;
                 bottom: 0;
                 width: 100%;
+                line-height: 1;
                 color: white;
                 padding: 16rem/@fs 20rem/@fs;
                 text-align: left;
@@ -114,5 +116,112 @@
                 background-color: rgba(0, 0, 0, .5);
             }
         }
+    }
+}
+
+//内容
+.box {
+    .outer {
+        overflow: hidden;
+        padding: 30rem/@fs 0;
+        border-bottom: 1rem/@fs solid rgb(247, 247, 247);
+        .content {
+            height: 150rem/@fs;
+            .imgs {
+                float: left;
+                img {
+                    width: 210rem/@fs;
+                }
+            }
+            .news {
+                height: 150rem/@fs;
+                width: 100%;
+                padding-left: 32rem/@fs+210rem/@fs;
+                .top {
+                    height: 124rem/@fs;
+                }
+                .bottom {
+                    height: calc(150rem/@fs - 124rem/@fs);
+                    color: rgb(180, 180, 180);
+                    .category {
+                        float: left;
+                    }
+                    .time {
+                        float: right;
+                    }
+                }
+            }
+        }
+        .bigTop {
+            margin-bottom: 30rem/@fs;
+        }
+        .bigImg {
+            width: 710rem/@fs;
+            height: 350rem/@fs;
+        }
+        .bigTime {
+            color: rgb(180, 180, 180);
+            margin-top: 30rem/@fs;
+            .category {
+                float: left;
+            }
+            .time {
+                float: right;
+            }
+        }
+        .middleImg {
+            overflow: hidden;
+            img {
+                float: left;
+                display: block;
+                width: 228rem/@fs;
+                height: 172rem/@fs;
+                padding-right: 20rem/@fs;
+            }
+        }
+    }
+}
+
+//友情链接
+.links {
+    background-color: rgb(89, 89, 89);
+    padding: 18rem/@fs 0;
+    span {
+        display: inline-block;
+        margin: 12rem/@fs 30rem/@fs;
+        color: #b0b0b0;
+    }
+    p {
+        margin: 0 30rem/@fs;
+        color: #898989;
+    }
+}
+
+// 尾部
+.footer {
+    a {
+        display: inline-block;
+        width: 32.772222222%;
+        padding-top: 68rem/@fs;
+        padding-bottom: 12rem/@fs;
+        text-align: center;
+        position: relative;
+        i {
+            position: absolute;
+            top: 14rem/@fs;
+            left: 42%;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+//返回图标
+.back {
+    position: fixed;
+    right: 20rem/@fs;
+    bottom: 120rem/@fs;
+    img {
+        width: 78rem/@fs;
+        height: 78rem/@fs;
     }
 }

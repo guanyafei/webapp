@@ -1,0 +1,118 @@
+//头部
+.header {
+    height: 76rem/@fs;
+    background-color: pink;
+    position: relative;
+    .logo {
+        text-align: center;
+        line-height: 76rem/@fs;
+        img {
+            width: 188rem/@fs;
+            height: 40rem/@fs;
+        }
+    }
+    .search {
+        position: absolute;
+        right: 30rem/@fs;
+        top: 14rem/@fs;
+        a {
+            display: inline-block;
+            img {
+                width: 38rem/@fs;
+                height: 40rem/@fs;
+            }
+        }
+    }
+}
+
+//导航栏
+.nav {
+    background-color: rgb(247, 247, 247);
+    position: relative;
+    overflow: hidden;
+    ul {
+        width: 1000000%;
+        li {
+            float: left;
+            a {
+                display: block;
+                padding: 0 22rem/@fs;
+                position: relative;
+                height: 80rem/@fs;
+                line-height: 80rem/@fs;
+                i {
+                    display: inline-block;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    margin-left: -12rem/@fs;
+                    border: 1rem/@fs solid red;
+                    height: 1rem/@fs;
+                    width: 24rem/@fs;
+                }
+            }
+            a:hover {
+                color: red;
+                text-decoration: none;
+            }
+        }
+    }
+    .go {
+        width: 120rem/@fs;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: url(../images/mask.png) no-repeat;
+        span {
+            float: right;
+            margin-right: 30rem/@fs;
+            color: red;
+            font-weight: 100;
+            margin-top: 1rem;
+        }
+    }
+}
+
+//轮播图
+.banner {
+    width: 100%;
+    .carousel {
+        .carousel-indicators {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 15;
+            width: 100%;
+            margin-left: 0;
+            padding: 16rem/@fs 20rem/@fs;
+            list-style: none;
+            text-align: right;
+            li {
+                width: 6rem/@fs;
+                height: 6rem/@fs;
+                border-radius: 10rem/@fs;
+                background-color: white;
+            }
+            li.active {
+                width: 12rem/@fs;
+                height: 12rem/@fs;
+            }
+        }
+    }
+    .carousel-inner {
+        .item {
+            .carousel-caption {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                color: white;
+                padding: 16rem/@fs 20rem/@fs;
+                text-align: left;
+                z-index: 10;
+                background-color: rgba(0, 0, 0, .5);
+            }
+        }
+    }
+}

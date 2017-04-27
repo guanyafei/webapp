@@ -1,6 +1,3 @@
-#box {
-  background-color: red;
-}
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -6724,9 +6721,188 @@ button.close {
     display: none !important;
   }
 }
+.header {
+  height: 3.04rem;
+  background-color: pink;
+  position: relative;
+}
+.header .logo {
+  text-align: center;
+  line-height: 3.04rem;
+}
+.header .logo img {
+  width: 7.52rem;
+  height: 1.6rem;
+}
+.header .search {
+  position: absolute;
+  right: 1.2rem;
+  top: 0.56rem;
+}
+.header .search a {
+  display: inline-block;
+}
+.header .search a img {
+  width: 1.52rem;
+  height: 1.6rem;
+}
+.nav {
+  background-color: #f7f7f7;
+  position: relative;
+  overflow: hidden;
+}
+.nav ul {
+  width: 1000000%;
+}
+.nav ul li {
+  float: left;
+}
+.nav ul li a {
+  display: block;
+  padding: 0 0.88rem;
+  position: relative;
+  height: 3.2rem;
+  line-height: 3.2rem;
+}
+.nav ul li a i {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -0.48rem;
+  border: 0.04rem solid red;
+  height: 0.04rem;
+  width: 0.96rem;
+}
+.nav ul li a:hover {
+  color: red;
+  text-decoration: none;
+}
+.nav .go {
+  width: 4.8rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../images/mask.png) no-repeat;
+}
+.nav .go span {
+  float: right;
+  margin-right: 1.2rem;
+  color: red;
+  font-weight: 100;
+  margin-top: 1rem;
+}
+.banner {
+  width: 100%;
+}
+.banner .carousel .carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  width: 100%;
+  margin-left: 0;
+  padding: 0.64rem 0.8rem;
+  list-style: none;
+  text-align: right;
+}
+.banner .carousel .carousel-indicators li {
+  width: 0.24rem;
+  height: 0.24rem;
+  border-radius: 0.4rem;
+  background-color: white;
+}
+.banner .carousel .carousel-indicators li.active {
+  width: 0.48rem;
+  height: 0.48rem;
+}
+.banner .carousel-inner .item .carousel-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 0.64rem 0.8rem;
+  text-align: left;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .container-fluid {
   margin: 0 0;
   padding: 0 0;
+}
+html {
+  font-size: 12.5px;
+}
+a {
+  color: #000000;
+}
+.w {
+  margin: 0px 0.8rem;
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+}
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset,
+img,
+input,
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+/*统一组合框的默认样式*/
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+select,
+input,
+button {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  margin: 0;
+}
+/*防止拖动 影响布局*/
+textarea {
+  resize: none;
+}
+/*去掉行内替换元素空白缝隙*/
+img {
+  border: 0;
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
 }
 /* .clearfix:after{
     content: "";

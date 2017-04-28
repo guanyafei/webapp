@@ -6925,6 +6925,122 @@ button.close {
   width: 3.12rem;
   height: 3.12rem;
 }
+#contain {
+  background-color: #efefef;
+}
+.nav {
+  background-color: #f7f7f7;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.nav ul {
+  width: 1000000%;
+}
+.nav ul li {
+  float: left;
+}
+.nav ul li a {
+  display: block;
+  padding: 0 0.88rem;
+  position: relative;
+  height: 3.2rem;
+  line-height: 3.2rem;
+}
+.nav ul li a i {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -0.48rem;
+  border: 0.04rem solid red;
+  height: 0.04rem;
+  width: 0.96rem;
+}
+.nav ul li a:hover {
+  color: red;
+  text-decoration: none;
+}
+.nav .search {
+  position: absolute;
+  right: 1.2rem;
+  top: 0.56rem;
+}
+.nav .search a {
+  display: inline-block;
+}
+.nav .search a img {
+  width: 1.52rem;
+  height: 1.6rem;
+}
+.box {
+  margin-top: 0.4rem;
+  background-color: #ffffff;
+}
+.box .top {
+  padding: 0.64rem 0;
+}
+.box .top .logo {
+  padding-left: 0.4rem;
+  float: left;
+}
+.box .top .logo img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.box .top .logo span {
+  color: #b4b4b4;
+  padding-left: 0.8rem;
+}
+.box .top .watcher {
+  float: right;
+  color: #b4b4b4;
+}
+.box .middle {
+  position: relative;
+}
+.box .middle span {
+  position: absolute;
+  bottom: 0.64rem;
+  right: 0.8rem;
+}
+.box .middle img:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -1.72rem;
+  margin-top: -1.72rem;
+  width: 3.44rem;
+  height: 3.44rem;
+}
+.box .bottom {
+  padding-bottom: 1.44rem;
+}
+.box .bottom p {
+  padding: 0.96rem 0;
+}
+.box .bottom .time {
+  color: #a6a6a6;
+  float: left;
+}
+.box .bottom .share {
+  color: #a6a6a6;
+  float: right;
+}
+.footer a {
+  display: inline-block;
+  width: 32.772222222%;
+  padding-top: 2.72rem;
+  padding-bottom: 0.48rem;
+  text-align: center;
+  position: relative;
+}
+.footer a i {
+  position: absolute;
+  top: 0.56rem;
+  left: 42%;
+  font-size: 1.5rem;
+}
 .container-fluid {
   margin: 0 0;
   padding: 0 0;

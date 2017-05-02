@@ -1,0 +1,94 @@
+.searchResult {
+    background-color: rgb(247, 247, 247);
+    // 搜索
+    .top {
+        position: relative;
+        color: rgb(165, 170, 178);
+        padding: 16rem/@fs 0;
+        .form-control {
+            display: inline-block;
+            border-radius: 34rem/@fs;
+            width: 90%;
+            height: 58rem/@fs;
+            padding-left: 64rem/@fs;
+            border-color: rgb(233, 233, 233);
+        }
+        .cancle {
+            margin-top: 14rem/@fs;
+            margin-left: 10rem/@fs;
+            color: rgb(229, 55, 43);
+        }
+        .remove {
+            position: absolute;
+            top: 32rem/@fs;
+            right: 104rem/@fs;
+            margin-top: -8rem/@fs;
+            color: rgb(255, 255, 255);
+            background-color: rgb(200, 200, 200);
+            border-radius: 50%;
+            font-size: 12rem/@fs;
+            i {
+                padding: 8rem/@fs 8rem/@fs;
+            }
+        }
+        span:last-child {
+            position: absolute;
+            top: 34rem/@fs;
+            left: 24rem/@fs;
+        }
+    }
+    // 搜索结果
+    .box {
+        background-color: @comColor;
+        .outer {
+            overflow: hidden;
+            padding: 30rem/@fs 0;
+            border-bottom: 1rem/@fs solid rgb(247, 247, 247);
+            .content {
+                height: 150rem/@fs;
+                .imgs {
+                    float: left;
+                    img {
+                        width: 210rem/@fs;
+                    }
+                }
+                .news {
+                    height: 150rem/@fs;
+                    width: 100%;
+                    padding-left: 32rem/@fs+210rem/@fs;
+                    .top {
+                        height: 124rem/@fs;
+                        color:black;
+                    }
+                    .bottom {
+                        height: calc(150rem/@fs - 124rem/@fs);
+                        color: rgb(180, 180, 180);
+                        .category {
+                            float: left;
+                        }
+                        .time {
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 热门搜索
+    .hotSearch {
+        margin:10rem/@fs 0;
+        background-color: @comColor;
+        padding-bottom: 20rem/@fs;
+        .title {
+            padding: 42rem/@fs 0;
+            color: rgb(165, 170, 178);
+        }
+        .hotWorld {
+            overflow: hidden;
+            a {
+                border-radius: 34rem/@fs;
+                margin: 0 40rem/@fs 30rem/@fs 0;
+            }
+        }
+    }
+}

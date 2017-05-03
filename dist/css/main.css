@@ -7275,33 +7275,41 @@ button.close {
 .searchResult .top .form-control {
   display: inline-block;
   border-radius: 1.36rem;
-  width: 90%;
   height: 2.32rem;
   padding-left: 2.56rem;
   border-color: #e9e9e9;
 }
-.searchResult .top .cancle {
-  margin-top: 0.56rem;
-  margin-left: 0.4rem;
-  color: #e5372b;
+.searchResult .top .search {
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+.searchResult .top .search .glyphicon-search {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.96rem;
 }
 .searchResult .top .remove {
   position: absolute;
-  top: 1.28rem;
-  right: 4.16rem;
+  top: 0.68rem;
+  right: 0.96rem;
   margin-top: -0.32rem;
   color: #ffffff;
   background-color: #c8c8c8;
   border-radius: 50%;
-  font-size: 0.48rem;
 }
 .searchResult .top .remove i {
   padding: 0.32rem 0.32rem;
 }
-.searchResult .top span:last-child {
-  position: absolute;
-  top: 1.36rem;
-  left: 0.96rem;
+.searchResult .top .cancle {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0.56rem;
+  text-align: center;
+}
+.searchResult .top .cancle span {
+  text-align: center;
+  color: #e5372b;
 }
 .searchResult .box {
   background-color: #ffffff;
@@ -7354,6 +7362,103 @@ button.close {
 .searchResult .hotSearch .hotWorld a {
   border-radius: 1.36rem;
   margin: 0 1.6rem 1.2rem 0;
+}
+.details .top {
+  padding: 1.12rem 0;
+}
+.details .top .col-xs-4 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.details .top div:first-child a {
+  display: block;
+  width: 6.48rem;
+  height: 1.36rem;
+  background: url('../images/details/logo.png') no-repeat center / 6.48rem 1.36rem;
+}
+.details .top .col-xs-4.title {
+  text-align: center;
+}
+.details .top .col-xs-4.share {
+  text-align: right;
+}
+.details .top .col-xs-4.share .glyphicon {
+  color: #e5372b;
+  top: 0.24rem;
+}
+.details .box {
+  margin-top: 1.84rem;
+}
+.details .box .header {
+  padding: 1.36rem 0;
+  color: #b4b4b4;
+}
+.details .box .header .category {
+  float: left;
+}
+.details .box .header .time {
+  float: right;
+}
+.details .box .main img {
+  width: 28.4rem;
+  height: 18.2rem;
+}
+.details .box .main div .question {
+  margin-top: 1.6rem;
+}
+.details .box .main div .answers .list-group .list-group-item {
+  border: 0;
+  margin-bottom: 0;
+  padding: 1rem 0;
+}
+.details .recommend > h5 {
+  text-align: center;
+}
+.details .recommend .outer {
+  overflow: hidden;
+  padding: 1.2rem 0;
+  border-bottom: 0.04rem solid #f7f7f7;
+}
+.details .recommend .outer .recomContent {
+  height: 6rem;
+}
+.details .recommend .outer .recomContent .imgs {
+  float: left;
+}
+.details .recommend .outer .recomContent .imgs img {
+  width: 8.4rem;
+}
+.details .recommend .outer .recomContent .news {
+  height: 6rem;
+  width: 100%;
+  padding-left: 9.68rem;
+}
+.details .recommend .outer .recomContent .news .top {
+  height: 4.96rem;
+  padding: 0 0;
+}
+.details .recommend .outer .recomContent .news .bottom {
+  height: calc(1.04rem);
+  color: #b4b4b4;
+}
+.details .recommend .outer .recomContent .news .bottom .category {
+  float: left;
+}
+.details .recommend .outer .recomContent .news .bottom .time {
+  float: right;
+}
+.details .hotSearch {
+  padding: 0.6rem 0;
+}
+.details .hotSearch .hotWorld {
+  overflow: hidden;
+}
+.details .hotSearch .hotWorld a {
+  border-radius: 1.36rem;
+  margin: 0.6rem 0.6rem;
+  color: #eb594f;
+  background-color: #f7f7f7;
+  padding: 0.64rem 1.2rem;
 }
 .container-fluid {
   margin: 0 0;

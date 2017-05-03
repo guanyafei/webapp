@@ -1,0 +1,114 @@
+.details {
+    // 头部
+    .top {
+        padding: 28rem/@fs 0;
+        .col-xs-4 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        div:first-child {
+            a {
+                display: block;
+                width: 162rem/@fs;
+                height: 34rem/@fs;
+                background: url('../images/details/logo.png') no-repeat center/162rem/@fs 34rem/@fs;
+            }
+        }
+        .col-xs-4.title {
+            text-align: center;
+        }
+        .col-xs-4.share {
+            text-align: right;
+            .glyphicon {
+                color: rgb(229, 55, 43);
+                top: 6rem/@fs;
+            }
+        }
+    }
+    // 内容
+    .box {
+        margin-top: 46rem/@fs;
+        .header {
+            padding: 34rem/@fs 0;
+            color: rgb(180, 180, 180);
+            .category {
+                float: left;
+            }
+            .time {
+                float: right;
+            }
+        }
+        .main {
+            img {
+                width: 710rem/@fs;
+                height: 455rem/@fs;
+            }
+            div {
+                .question {
+                    margin-top: 40rem/@fs;
+                }
+                .answers {
+                    .list-group {
+                        .list-group-item {
+                            border: 0;
+                            margin-bottom: 0;
+                            padding: 25rem/@fs 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 相关推荐
+    .recommend {
+        >h5 {
+            text-align: center;
+        }
+        .outer {
+            overflow: hidden;
+            padding: 30rem/@fs 0;
+            border-bottom: 1rem/@fs solid rgb(247, 247, 247);
+            .recomContent {
+                height: 150rem/@fs;
+                .imgs {
+                    float: left;
+                    img {
+                        width: 210rem/@fs;
+                    }
+                }
+                .news {
+                    height: 150rem/@fs;
+                    width: 100%;
+                    padding-left: 32rem/@fs+210rem/@fs;
+                    .top {
+                        height: 124rem/@fs;
+                        padding: 0 0;
+                    }
+                    .bottom {
+                        height: calc(150rem/@fs - 124rem/@fs);
+                        color: rgb(180, 180, 180);
+                        .category {
+                            float: left;
+                        }
+                        .time {
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hotSearch {
+        padding: 15rem/@fs 0;
+        .hotWorld {
+            overflow: hidden;
+            a {
+                border-radius: 34rem/@fs;
+                margin: 15rem/@fs 15rem/@fs;
+                color: rgb(235, 89, 79);
+                background-color: rgb(247, 247, 247);
+                padding: 16rem/@fs 30rem/@fs;
+            }
+        }
+    }
+}

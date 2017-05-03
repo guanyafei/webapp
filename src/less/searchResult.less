@@ -8,33 +8,41 @@
         .form-control {
             display: inline-block;
             border-radius: 34rem/@fs;
-            width: 90%;
             height: 58rem/@fs;
             padding-left: 64rem/@fs;
             border-color: rgb(233, 233, 233);
         }
-        .cancle {
-            margin-top: 14rem/@fs;
-            margin-left: 10rem/@fs;
-            color: rgb(229, 55, 43);
+        .search {
+            padding-left: 0;
+            padding-right: 0;
+            position: relative;
+            .glyphicon-search {
+                position: absolute;
+                top: 20rem/@fs;
+                left: 24rem/@fs;
+            }
         }
         .remove {
             position: absolute;
-            top: 32rem/@fs;
-            right: 104rem/@fs;
+            top: 17rem/@fs;
+            right: 24rem/@fs;
             margin-top: -8rem/@fs;
             color: rgb(255, 255, 255);
             background-color: rgb(200, 200, 200);
             border-radius: 50%;
-            font-size: 12rem/@fs;
             i {
                 padding: 8rem/@fs 8rem/@fs;
             }
         }
-        span:last-child {
-            position: absolute;
-            top: 34rem/@fs;
-            left: 24rem/@fs;
+        .cancle {
+            padding-left: 0;
+            padding-right: 0;
+            margin-top: 14rem/@fs;
+            text-align: center;
+            span {
+            text-align: center;
+                color: rgb(229, 55, 43);  
+            }
         }
     }
     // 搜索结果
@@ -58,7 +66,7 @@
                     padding-left: 32rem/@fs+210rem/@fs;
                     .top {
                         height: 124rem/@fs;
-                        color:black;
+                        color: black;
                     }
                     .bottom {
                         height: calc(150rem/@fs - 124rem/@fs);
@@ -76,7 +84,7 @@
     }
     // 热门搜索
     .hotSearch {
-        margin:10rem/@fs 0;
+        margin: 10rem/@fs 0;
         background-color: @comColor;
         padding-bottom: 20rem/@fs;
         .title {

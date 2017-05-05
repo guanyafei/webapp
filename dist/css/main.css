@@ -6723,9 +6723,9 @@ button.close {
 }
 @font-face {
   font-family: "iconfont";
-  src: url('../fonts/iconfont.eot?t=1493366612446');
+  src: url('../fonts/iconfont.eot?t=1493888219539');
   /* IE9*/
-  src: url('../fonts/iconfont.eot?t=1493366612446#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/iconfont.woff?t=1493366612446') format('woff'), /* chrome, firefox */ url('../fonts/iconfont.ttf?t=1493366612446') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('../fonts/iconfont.svg?t=1493366612446#iconfont') format('svg');
+  src: url('../fonts/iconfont.eot?t=1493888219539#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/iconfont.woff?t=1493888219539') format('woff'), /* chrome, firefox */ url('../fonts/iconfont.ttf?t=1493888219539') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('../fonts/iconfont.svg?t=1493888219539#iconfont') format('svg');
   /* iOS 4.1- */
 }
 .iconfont {
@@ -6735,14 +6735,29 @@ button.close {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-QQ:before {
-  content: "\e607";
-}
 .icon-weixin:before {
   content: "\e603";
 }
-.icon-iconfontweibowukuang:before {
-  content: "\e661";
+.icon-qq:before {
+  content: "\e648";
+}
+.icon-icon:before {
+  content: "\e60c";
+}
+.icon-qqkongjian:before {
+  content: "\e65d";
+}
+.icon-weixin1:before {
+  content: "\e501";
+}
+.icon-QQ:before {
+  content: "\e68b";
+}
+.icon-weibo:before {
+  content: "\e641";
+}
+.icon-pengyouquan:before {
+  content: "\e519";
 }
 .index .header {
   height: 3.04rem;
@@ -6927,16 +6942,18 @@ button.close {
 }
 .index .footer a {
   display: inline-block;
-  width: 32.7222222222222%;
+  width: 33.333333333%;
+  float: left;
   padding-top: 2.72rem;
   padding-bottom: 0.48rem;
   text-align: center;
   position: relative;
 }
-.index .footer a i {
+.index .footer a i.glyphicon {
   position: absolute;
   top: 0.56rem;
-  left: 42%;
+  left: 50%;
+  margin-left: -0.64rem;
   font-size: 1.5rem;
 }
 .index .back {
@@ -7137,9 +7154,11 @@ button.close {
 .login .share {
   text-align: center;
 }
-.login .share > i {
+.login .share > i.iconfont {
+  display: inline-block;
+  float: left;
   font-size: 2.4rem;
-  margin: 0 3.4rem;
+  width: 33.33333333%;
   cursor: pointer;
 }
 .logout .top {
@@ -7378,9 +7397,26 @@ button.close {
 }
 .details .top .col-xs-4.title {
   text-align: center;
+  line-height: 1.6rem;
 }
 .details .top .col-xs-4.share {
   text-align: right;
+}
+.details .top .col-xs-4.share a.btn {
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+.details .top .col-xs-4.share a.btn:hover,
+.details .top .col-xs-4.share a.btn:focus {
+  background-color: transparent;
+}
+.details .top .col-xs-4.share .btn:active,
+.details .top .col-xs-4.share .btn.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
 }
 .details .top .col-xs-4.share .glyphicon {
   color: #e5372b;
@@ -7460,6 +7496,108 @@ button.close {
   background-color: #f7f7f7;
   padding: 0.64rem 1.2rem;
 }
+.details .shareIcon {
+  border-bottom: 0.04rem solid #f0f0f0;
+  padding: 7.6rem 0 2rem 0;
+}
+.details .shareIcon > a {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 20%;
+  text-align: center;
+  color: #aaaaaa;
+  text-decoration: none;
+}
+.details .shareIcon > a i.iconfont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -2.28rem;
+  margin-top: -6rem;
+  display: inline-block;
+  width: 4.56rem;
+  height: 4.56rem;
+  border-radius: 50%;
+  border: 1px solid #f0f0f0;
+  text-align: center;
+  line-height: 4.56rem;
+  font-size: 1.5rem;
+  color: #000000;
+}
+.details .modal .modal-dialog {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+}
+.details .modal .modal-dialog .modal-content {
+  border-radius: 0;
+  border: 0;
+}
+.details .modal .modal-dialog .modal-content .modal-body {
+  padding: 0;
+}
+.details .modal .modal-dialog .modal-content .modal-footer {
+  padding: 1.44rem 0;
+  text-align: center;
+}
+.details .modal .modal-dialog .modal-content .modal-footer .close {
+  font-size: inherit;
+  font-weight: 100;
+  float: none;
+  opacity: 1;
+}
+.about .header {
+  text-align: center;
+  padding: 1.2rem 0;
+  margin-bottom: 2.4rem;
+  border-bottom: 0.04rem solid #f2f2f2;
+}
+.about .header span.glyphicon {
+  float: left;
+  margin-left: 0.8rem;
+}
+.deliver .header {
+  text-align: center;
+  padding: 1.2rem 0;
+  border-bottom: 0.04rem solid #f2f2f2;
+}
+.deliver .header span.glyphicon {
+  float: left;
+  margin-left: 0.8rem;
+}
+.deliver .push {
+  text-align: center;
+  margin-top: 6.48rem;
+}
+.deliver .push a {
+  display: block;
+  margin-bottom: 2.4rem;
+}
+.deliver .push a > img {
+  width: 9.36rem;
+  height: 9.36rem;
+}
+.join .header {
+  text-align: center;
+  padding: 1.2rem 0;
+  border-bottom: 0.04rem solid #f2f2f2;
+}
+.join .header span.glyphicon {
+  float: left;
+  margin-left: 0.8rem;
+}
+.join .require .condition {
+  margin-top: 2.48rem;
+}
+.join .require .condition p:first-child {
+  font-weight: bold;
+}
+.join .require .condition p {
+  margin-bottom: 2.08rem;
+}
 .container-fluid {
   margin: 0 0;
   padding: 0 0;
@@ -7498,7 +7636,6 @@ img {
   margin: 0;
   padding: 0;
 }
-/*各浏览器显示不同，去掉蓝色边框*/
 fieldset,
 img,
 input,
@@ -7512,7 +7649,6 @@ ul,
 ol {
   list-style: none;
 }
-/*统一组合框的默认样式*/
 input {
   padding-top: 0;
   padding-bottom: 0;
@@ -7527,11 +7663,9 @@ input,
 textarea {
   margin: 0;
 }
-/*防止拖动 影响布局*/
 textarea {
   resize: none;
 }
-/*去掉行内替换元素空白缝隙*/
 img {
   border: 0;
   vertical-align: middle;

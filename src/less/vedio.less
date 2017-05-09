@@ -5,9 +5,11 @@
     .nav {
         background-color: rgb(247, 247, 247);
         position: relative;
-        overflow: hidden;
         background-color: @comColor;
-        ul {
+        div{
+            overflow: hidden;
+            overflow-x: scroll;
+         ul {
             width: 1000000%;
             li {
                 float: left;
@@ -33,11 +35,14 @@
                     text-decoration: none;
                 }
             }
+        }   
         }
+        
         .search {
             position: absolute;
             right: 30rem/@fs;
-            top: 14rem/@fs;
+            top: 50%;
+            margin-top: -20rem/@fs;
             a {
                 display: inline-block;
                 img {

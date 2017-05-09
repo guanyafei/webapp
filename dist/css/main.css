@@ -6787,22 +6787,25 @@ button.close {
 .index .nav {
   background-color: #f7f7f7;
   position: relative;
-  overflow: hidden;
 }
-.index .nav ul {
+.index .nav div {
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.index .nav div ul {
   width: 1000000%;
 }
-.index .nav ul li {
+.index .nav div ul li {
   float: left;
 }
-.index .nav ul li a {
+.index .nav div ul li a {
   display: block;
   padding: 0 0.88rem;
   position: relative;
   height: 3.2rem;
   line-height: 3.2rem;
 }
-.index .nav ul li a i {
+.index .nav div ul li a i {
   display: inline-block;
   position: absolute;
   left: 50%;
@@ -6812,7 +6815,7 @@ button.close {
   height: 0.04rem;
   width: 0.96rem;
 }
-.index .nav ul li a:hover {
+.index .nav div ul li a:hover {
   color: red;
   text-decoration: none;
 }
@@ -6906,6 +6909,7 @@ button.close {
 .index .box .outer .bigImg {
   width: 28.4rem;
   height: 14rem;
+  margin: 0 auto;
 }
 .index .box .outer .bigTime {
   color: #b4b4b4;
@@ -6917,15 +6921,10 @@ button.close {
 .index .box .outer .bigTime .time {
   float: right;
 }
-.index .box .outer .middleImg {
-  overflow: hidden;
-}
 .index .box .outer .middleImg img {
-  float: left;
-  display: block;
   width: 9.12rem;
   height: 6.88rem;
-  padding-right: 0.8rem;
+  margin: 0 auto;
 }
 .index .links {
   background-color: #595959;
@@ -6971,23 +6970,26 @@ button.close {
 #contain .nav {
   background-color: #f7f7f7;
   position: relative;
-  overflow: hidden;
   background-color: #ffffff;
 }
-#contain .nav ul {
+#contain .nav div {
+  overflow: hidden;
+  overflow-x: scroll;
+}
+#contain .nav div ul {
   width: 1000000%;
 }
-#contain .nav ul li {
+#contain .nav div ul li {
   float: left;
 }
-#contain .nav ul li a {
+#contain .nav div ul li a {
   display: block;
   padding: 0 0.88rem;
   position: relative;
   height: 3.2rem;
   line-height: 3.2rem;
 }
-#contain .nav ul li a i {
+#contain .nav div ul li a i {
   display: inline-block;
   position: absolute;
   left: 50%;
@@ -6997,14 +6999,15 @@ button.close {
   height: 0.04rem;
   width: 0.96rem;
 }
-#contain .nav ul li a:hover {
+#contain .nav div ul li a:hover {
   color: red;
   text-decoration: none;
 }
 #contain .nav .search {
   position: absolute;
   right: 1.2rem;
-  top: 0.56rem;
+  top: 50%;
+  margin-top: -0.8rem;
 }
 #contain .nav .search a {
   display: inline-block;
@@ -7787,6 +7790,12 @@ html {
 }
 a {
   color: #000000;
+}
+.col-xs-4,
+.col-xs-12 {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 body {
   font-size: 12.5px;

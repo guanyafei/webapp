@@ -7772,8 +7772,10 @@ button.close {
 .contact .email p {
   color: #888888;
 }
-.contact .allmap {
+.contact #allmap {
   height: 24rem;
+  width: 95%;
+  margin: 0 auto;
   background-color: red;
 }
 .container-fluid {

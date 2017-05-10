@@ -20,7 +20,7 @@ const paths = {
 };
 
 gulp.task('less', () => {
-    return gulp.src('./src/less/main.less')
+    return gulp.src('./src/less/*.less')
         .pipe(less())
         .pipe(gulpif(argv.deploy, cssnano()))
         .pipe(gulp.dest('./dist/css'));

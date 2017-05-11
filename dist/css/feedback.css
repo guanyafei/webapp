@@ -1,1 +1,151 @@
-html{font-size:12.5px}.container-fluid{margin:0;padding:0}a{color:#000}.col-xs-4,.col-xs-12{padding:0;margin-left:0;margin-right:0}body{font-size:12.5px}.w{margin:0 .8rem}body,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,html,img,legend,li,ol,p,ul{margin:0;padding:0}button,fieldset,img,input{border:none;padding:0;margin:0;outline-style:none}ol,ul{list-style:none}input{padding-top:0;padding-bottom:0}button,input,select{vertical-align:middle}input,select,textarea{margin:0}textarea{resize:none}img{border:0;vertical-align:middle}table{border-collapse:collapse}.feedback .header{text-align:center;padding:1.2rem 0;border-bottom:.04rem solid #f2f2f2}.feedback .header span.glyphicon{float:left;margin-left:.8rem}.feedback .header .btn{float:right;border:0;padding:0;font-size:1rem;color:#a9aeb0;outline:0;margin-right:.8rem}.feedback .header .btn-default:active,.feedback .header .btn-default:focus,.feedback .header .btn-default:hover,.feedback .header .form-control.suggest:active,.feedback .header .form-control.suggest:focus{background-color:transparent}.feedback .header .btn:active,.feedback .header .form-control.suggest:active{box-shadow:0 0 0 0}.feedback .form-group{margin-bottom:0;position:relative;padding:1.28rem 0;display:block;border-bottom:.04rem solid #f2f2f2}.feedback .form-group .form-control{width:100%;height:100%;padding:0;padding-left:5.04rem;border:0;box-shadow:0 0 0 0}.feedback .form-group #email{color:#2288f7}.feedback .form-group label{margin-bottom:0;position:absolute;top:50%;margin-top:-.6rem;left:0}.feedback .suggest{margin-top:4.8rem}.feedback .suggest .form-control{margin:0;padding:0;border:0;box-shadow:0 0 0 0}.feedback .suggest .form-control::placeholder{color:#000}
+html {
+  font-size: 12.5px;
+}
+.container-fluid {
+  margin: 0 0;
+  padding: 0 0;
+}
+a {
+  color: #000000;
+}
+.col-xs-4,
+.col-xs-12 {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+body {
+  font-size: 12.5px;
+}
+.w {
+  margin: 0 0.8rem;
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+}
+fieldset,
+img,
+input,
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+select,
+input,
+button {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  margin: 0;
+}
+textarea {
+  resize: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+}
+.feedback .header {
+  text-align: center;
+  padding: 1.2rem 0;
+  border-bottom: 0.04rem solid #f2f2f2;
+}
+.feedback .header span.glyphicon {
+  float: left;
+  margin-left: 0.8rem;
+}
+.feedback .header .btn {
+  float: right;
+  border: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: #a9aeb0;
+  outline: 0;
+  margin-right: 0.8rem;
+}
+.feedback .header .form-control.suggest:focus,
+.feedback .header .btn-default:focus {
+  background-color: transparent;
+}
+.feedback .header .btn-default:hover {
+  background-color: transparent;
+}
+.feedback .header .form-control.suggest:active,
+.feedback .header .btn-default:active {
+  background-color: transparent;
+}
+.feedback .header .form-control.suggest:active,
+.feedback .header .btn:active {
+  box-shadow: 0 0 0 0;
+}
+.feedback .form-group {
+  margin-bottom: 0;
+  position: relative;
+  padding: 1.28rem 0;
+  display: block;
+  border-bottom: 0.04rem solid #f2f2f2;
+}
+.feedback .form-group .form-control {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  padding-left: 5.04rem;
+  border: 0;
+  box-shadow: 0 0 0 0;
+}
+.feedback .form-group #email {
+  color: #2288f7;
+}
+.feedback .form-group label {
+  margin-bottom: 0;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.6rem;
+  left: 0;
+}
+.feedback .suggest {
+  margin-top: 4.8rem;
+}
+.feedback .suggest .form-control {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-shadow: 0 0 0 0;
+}
+.feedback .suggest .form-control::placeholder {
+  color: #000000;
+}

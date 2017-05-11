@@ -1,1 +1,154 @@
-html{font-size:12.5px}.container-fluid{margin:0;padding:0}a{color:#000}.col-xs-4,.col-xs-12{padding:0;margin-left:0;margin-right:0}body{font-size:12.5px}.w{margin:0 .8rem}body,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,html,img,legend,li,ol,p,ul{margin:0;padding:0}button,fieldset,img,input{border:none;padding:0;margin:0;outline-style:none}ol,ul{list-style:none}input{padding-top:0;padding-bottom:0}button,input,select{vertical-align:middle}input,select,textarea{margin:0}textarea{resize:none}img{border:0;vertical-align:middle}table{border-collapse:collapse}.serch{background-color:#f7f7f7}.serch .top{position:relative;color:#a5aab2;padding:.64rem 0}.serch .top .form-control{display:inline-block;border-radius:1.36rem;width:90%;height:2.32rem;padding-left:2.56rem;border-color:#e9e9e9}.serch .top .cancle{margin-top:.56rem;margin-left:.4rem;color:#e5372b}.serch .top span:last-child{position:absolute;top:1.36rem;left:.96rem}.serch .hotSearch{background-color:#fff;padding-bottom:.8rem}.serch .hotSearch .title{padding:1.68rem 0;color:#a5aab2}.serch .hotSearch .hotWorld{overflow:hidden}.serch .hotSearch .hotWorld a{border-radius:1.36rem;margin:0 1.6rem 1.2rem 0}.serch .searchHistory{margin-top:.4rem;background-color:#fff}.serch .searchHistory .list-group .list-group-item{padding:2.08rem 0;border:0;color:#878787;border-radius:0;border-bottom:.04rem solid #f2f2f2;margin-bottom:0;line-height:1;color:#000}.serch .searchHistory .list-group .list-group-item span{float:right;color:#e1e1e1}.serch .searchHistory .list-group a.list-group-item:focus,.serch .searchHistory .list-group a.list-group-item:hover{background-color:transparent}.serch .searchHistory .list-group a:first-child,.serch .searchHistory .list-group a:last-child{color:#878787}.serch .searchHistory .list-group a.disabled{background-color:#fff}.serch .searchHistory .list-group a:last-child{text-align:center}
+html {
+  font-size: 12.5px;
+}
+.container-fluid {
+  margin: 0 0;
+  padding: 0 0;
+}
+a {
+  color: #000000;
+}
+.col-xs-4,
+.col-xs-12 {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+body {
+  font-size: 12.5px;
+}
+.w {
+  margin: 0 0.8rem;
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+}
+fieldset,
+img,
+input,
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+select,
+input,
+button {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  margin: 0;
+}
+textarea {
+  resize: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+}
+.serch {
+  background-color: #f7f7f7;
+}
+.serch .top {
+  position: relative;
+  color: #a5aab2;
+  padding: 0.64rem 0;
+}
+.serch .top .form-control {
+  display: inline-block;
+  border-radius: 1.36rem;
+  width: 90%;
+  height: 2.32rem;
+  padding-left: 2.56rem;
+  border-color: #e9e9e9;
+}
+.serch .top .cancle {
+  margin-top: 0.56rem;
+  margin-left: 0.4rem;
+  color: #e5372b;
+}
+.serch .top span:last-child {
+  position: absolute;
+  top: 1.36rem;
+  left: 0.96rem;
+}
+.serch .hotSearch {
+  background-color: #ffffff;
+  padding-bottom: 0.8rem;
+}
+.serch .hotSearch .title {
+  padding: 1.68rem 0;
+  color: #a5aab2;
+}
+.serch .hotSearch .hotWorld {
+  overflow: hidden;
+}
+.serch .hotSearch .hotWorld a {
+  border-radius: 1.36rem;
+  margin: 0 1.6rem 1.2rem 0;
+}
+.serch .searchHistory {
+  margin-top: 0.4rem;
+  background-color: #ffffff;
+}
+.serch .searchHistory .list-group .list-group-item {
+  padding: 2.08rem 0;
+  border: 0;
+  color: #878787;
+  border-radius: 0;
+  border-bottom: 0.04rem solid #f2f2f2;
+  margin-bottom: 0;
+  line-height: 1;
+  color: black;
+}
+.serch .searchHistory .list-group .list-group-item span {
+  float: right;
+  color: #e1e1e1;
+}
+.serch .searchHistory .list-group a.list-group-item:hover,
+.serch .searchHistory .list-group a.list-group-item:focus {
+  background-color: transparent;
+}
+.serch .searchHistory .list-group a:last-child,
+.serch .searchHistory .list-group a:first-child {
+  color: #878787;
+}
+.serch .searchHistory .list-group a.disabled {
+  background-color: #ffffff;
+}
+.serch .searchHistory .list-group a:last-child {
+  text-align: center;
+}

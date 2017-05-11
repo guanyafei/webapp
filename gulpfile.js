@@ -11,14 +11,7 @@ const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
 const browserSync = require('browser-sync').create();
 
-const paths = {
-    less: './src/less/main.less',
-    vendors: [
-        './node_modules/jquery/dist/jquery.min.js',
-        './node_modules/bootstrap/dist/js/bootstrap.min.js'
-    ]
-};
-
+// 编译less文件
 gulp.task('less', () => {
     return gulp.src('./src/less/*.less')
         .pipe(less())
@@ -30,20 +23,14 @@ gulp.task('fonts', () => {
     return gulp.src('./src/fonts/*.{eot,svg,ttf,woff,woff2}')
         .pipe(gulp.dest('./dist/fonts'));
 });
-/**
- * 将所有的项目第三方依赖的客户端 js 打包压缩成 vendor.js 到 dist/js/vendor.js
- */
-gulp.task('vendor', () => {
-    return gulp.src(paths.vendors)
-        .pipe(concat('vendor.js'))
-        .pipe(gulpif(argv.deploy, uglify()))
-        .pipe(gulp.dest('./dist/js'));
+
+gulp.task('commonJs', () => {
+    return gulp.src('./src/js/common/**/*')
+        .pipe(gulp.dest('./dist/js/common'));
 });
 
 
-/**
- * 压缩 img 中的图片写入 dist/img
- */
+//压缩 img 图片
 gulp.task('img', () => {
     return gulp.src('./src/images/**/*.{jpg,jpeg,png,gif}')
         .pipe(imagemin())
@@ -51,27 +38,18 @@ gulp.task('img', () => {
 });
 
 
-/**
- * 合并压缩 app 中所有的自己的 js 文件到 dist/js/bundle.js
- */
+//压缩 自定义 js 文件
 gulp.task('scripts', () => {
     return gulp.src([
-            './src/app/**/*.js'
+            './src/js/*.js'
         ])
-        .pipe(concat('bundle.js'))
         .pipe(gulpif(argv.deploy, uglify()))
         .pipe(gulp.dest('./dist/js'));
 });
 
-
-gulp.task('template', () => {
-    return gulp.src('./src/page/**/*.html')
-        .pipe(gulpif(argv.deploy, htmlmin({ collapseWhitespace: true })))
-        .pipe(gulp.dest('./dist/page/'));
-});
-
+//压缩 自定义 html 文件
 gulp.task('html', () => {
-    return gulp.src('./src/index.html')
+    return gulp.src('./src/**/*.html')
         .pipe(gulpif(argv.deploy, htmlmin({ collapseWhitespace: true })))
         .pipe(gulp.dest('./dist/'));
 });
@@ -83,16 +61,12 @@ gulp.task('del', function (callback) {
     callback();
 });
 
+//browserSync  文件保存自动刷新浏览器
 gulp.task('watch-html', ['html'], (callback) => {
     browserSync.reload();
     callback();
 });
 gulp.task('watch-fonts', ['fonts'], (callback) => {
-    browserSync.reload();
-    callback();
-});
-
-gulp.task('watch-template', ['template'], (callback) => {
     browserSync.reload();
     callback();
 });
@@ -108,17 +82,16 @@ gulp.task('watch-scripts', ['scripts'], (callback) => {
 });
 
 
-gulp.task('serve', ['fonts', 'template', 'less', 'scripts', 'html', 'vendor', 'img'], () => {
+gulp.task('serve', ['fonts', 'commonJs','scripts', 'less', 'html','img'], () => {
     browserSync.init({
         server: {
             baseDir: "./dist/"
         }
     });
     gulp.watch('./src/fonts/*.{eot,svg,ttf,woff,woff2}', ['watch-fonts']);
-    gulp.watch('./src/page/**/*.html', ['watch-template']);
     gulp.watch('./src/index.html', ['watch-html']);
     gulp.watch('./src/less/**/*.less', ['watch-less']);
-    gulp.watch(['./src/app/**/*.js', './src/app/**/*.html'], ['watch-scripts']);
+    gulp.watch('./src/js/*.js', ['watch-scripts']);
 });
 
 gulp.task('default', ['serve']);

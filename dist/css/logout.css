@@ -1,1 +1,130 @@
-html{font-size:12.5px}.container-fluid{margin:0;padding:0}a{color:#000}.col-xs-4,.col-xs-12{padding:0;margin-left:0;margin-right:0}body{font-size:12.5px}.w{margin:0 .8rem}body,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,html,img,legend,li,ol,p,ul{margin:0;padding:0}button,fieldset,img,input{border:none;padding:0;margin:0;outline-style:none}ol,ul{list-style:none}input{padding-top:0;padding-bottom:0}button,input,select{vertical-align:middle}input,select,textarea{margin:0}textarea{resize:none}img{border:0;vertical-align:middle}table{border-collapse:collapse}.logout .top{background-color:#fafafa;padding:3.2rem 0 3.36rem}.logout .top .head{width:9.68rem;height:9.68rem;border-radius:50%;background-color:#fff;margin:0 auto;text-align:center;line-height:9.68rem}.logout .top .head a{display:inline-block;width:9.68rem;height:9.68rem}.logout .top .head img{width:2.88rem;height:3.28rem}.logout .top .tip{text-align:center}.logout .top .tip>p:first-child{margin:2.56rem 0 .8rem;font-size:1.5rem}.logout .top .tip>p:last-child{margin:.8rem 0;color:#979797}.logout .list .list-group .list-group-item{padding:2.08rem 0;border:0;color:#878787;border-radius:0;border-bottom:.04rem solid #f2f2f2;margin-bottom:0;line-height:1}.logout .list .list-group .list-group-item span{float:right}.logout .list .list-group a.list-group-item:focus,.logout .list .list-group a.list-group-item:hover{background-color:transparent}
+html {
+  font-size: 12.5px;
+}
+.container-fluid {
+  margin: 0 0;
+  padding: 0 0;
+}
+a {
+  color: #000000;
+}
+.col-xs-4,
+.col-xs-12 {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+body {
+  font-size: 12.5px;
+}
+.w {
+  margin: 0 0.8rem;
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+}
+fieldset,
+img,
+input,
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+select,
+input,
+button {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  margin: 0;
+}
+textarea {
+  resize: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+}
+.logout .top {
+  background-color: #fafafa;
+  padding: 3.2rem 0 3.36rem 0;
+}
+.logout .top .head {
+  width: 9.68rem;
+  height: 9.68rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 9.68rem;
+}
+.logout .top .head a {
+  display: inline-block;
+  width: 9.68rem;
+  height: 9.68rem;
+}
+.logout .top .head img {
+  width: 2.88rem;
+  height: 3.28rem;
+}
+.logout .top .tip {
+  text-align: center;
+}
+.logout .top .tip > p:first-child {
+  margin: 2.56rem 0 0.8rem 0;
+  font-size: 1.5rem;
+}
+.logout .top .tip > p:last-child {
+  margin: 0.8rem 0;
+  color: #979797;
+}
+.logout .list .list-group .list-group-item {
+  padding: 2.08rem 0;
+  border: 0;
+  color: #878787;
+  border-radius: 0;
+  border-bottom: 0.04rem solid #f2f2f2;
+  margin-bottom: 0;
+  line-height: 1;
+}
+.logout .list .list-group .list-group-item span {
+  float: right;
+}
+.logout .list .list-group a.list-group-item:hover,
+.logout .list .list-group a.list-group-item:focus {
+  background-color: transparent;
+}

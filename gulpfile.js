@@ -10,7 +10,7 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
 const browserSync = require('browser-sync').create();
-
+const babel = require('gulp-babel');
 // 编译less文件
 gulp.task('less', () => {
     return gulp.src('./src/less/*.less')
@@ -25,8 +25,8 @@ gulp.task('fonts', () => {
 });
 
 gulp.task('commonJs', () => {
-    return gulp.src('./src/js/common/**/*')
-        .pipe(gulp.dest('./dist/js/common'));
+    return gulp.src('./src/common/**/*')
+        .pipe(gulp.dest('./dist/common'));
 });
 
 
@@ -44,6 +44,9 @@ gulp.task('scripts', () => {
             './src/js/*.js'
         ])
         .pipe(gulpif(argv.deploy, uglify()))
+        .pipe(babel({
+            presets:['es2015']
+        }))
         .pipe(gulp.dest('./dist/js'));
 });
 
@@ -55,10 +58,9 @@ gulp.task('html', () => {
 });
 
 //删除dist文件夹
-gulp.task('del', function (callback) {
+gulp.task('del', function () {
   gulp.src('./dist', {read: false})
     .pipe(clean());
-    callback();
 });
 
 //browserSync  文件保存自动刷新浏览器

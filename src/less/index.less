@@ -1,5 +1,6 @@
 @import "./variables.less";
 .index {
+    padding:80rem/@fs 0 110rem/@fs 0;
     .header {
         height: 76rem/@fs;
         background-color: pink;
@@ -34,7 +35,7 @@
             overflow: hidden;
             overflow-x: scroll;
             ul {
-                width: 1000000%;
+                width: 600rem/@fs;
                 li {
                     float: left;
                     a {
@@ -49,13 +50,18 @@
                             left: 50%;
                             bottom: 0;
                             margin-left: -12rem/@fs;
-                            border: 1rem/@fs solid red;
                             height: 1rem/@fs;
                             width: 24rem/@fs;
                         }
                     }
+                    a.active{
+                        color:red;
+                        font-size: 1.2rem;
+                        >i{
+                          border: 1rem/@fs solid red;  
+                        }
+                    }
                     a:hover {
-                        color: red;
                         text-decoration: none;
                     }
                 }
@@ -216,9 +222,10 @@
     }
     //返回图标
      .back {
+        display: none;
         position: fixed;
         right: 20rem/@fs;
-        bottom: 120rem/@fs;
+        bottom: 160rem/@fs;
         a{
             display: block;
         }

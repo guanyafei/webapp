@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./js/common/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./common/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <title>CEOCIO</title>
 </head>
@@ -13,164 +13,746 @@
     <a href="#" id="goTop"></a>
     <div class="container-fluid index">
         <!-- 头部 -->
-        <div class="header">
-            <div class="logo">
-                <img src="./images/index/logo.png">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="header container">
+                <div class="logo">
+                    <img src="./images/index/logo.png">
+                </div>
+                <div class="search">
+                    <a href="./page/search.html">
+                        <img src="./images/index/search.png">
+                    </a>
+                </div>
             </div>
-            <div class="search">
-                <a href="./page/search.html">
-                    <img src="./images/index/search.png">
-                </a>
-            </div>
-        </div>
+        </nav>
         <!-- 导航 -->
         <nav class="nav">
             <div>
-                <ul>
-                    <li><a href="#">质询<i></i></a></li>
-                    <li><a href="#">金融</a></li>
-                    <li><a href="#">科技</a></li>
-                    <li><a href="#">汽车</a></li>
-                    <li><a href="#">财经</a></li>
-                    <li><a href="#">杂志</a></li>
-                    <li><a href="#">杂志</a></li>
-                    <li><a href="#">杂志</a></li>
-                    <li><a href="#">杂志</a></li>
-                    <li><a href="#">杂志</a></li>
-                    <li><a href="#">杂志</a></li>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#ZX" role="tab" data-toggle="tab" class="active">质询<i></i></a></li>
+                    <li role="presentation"><a href="#JR" role="tab" data-toggle="tab">金融<i></i></a></li>
+                    <li role="presentation"><a href="#KJ" role="tab" data-toggle="tab">科技<i></i></a></li>
+                    <li role="presentation"><a href="#QC" role="tab" data-toggle="tab">汽车<i></i></a></li>
+                    <li role="presentation"><a href="#CJ" role="tab" data-toggle="tab">财经<i></i></a></li>
+                    <li role="presentation"><a href="#ZZ" role="tab" data-toggle="tab">杂志<i></i></a></li>
                 </ul>
             </div>
             <div class="go">
                 <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
             </div>
         </nav>
-        <!-- 轮播图 -->
-        <div class="banner">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="./images/index/banner01.png">
-                        <div class="carousel-caption">
-                            firstfirstfirstfirstfirst
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./images/index/banner01.png">
-                        <div class="carousel-caption">
-                            two
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./images/index/banner01.png">
-                        <div class="carousel-caption">
-                            three
+        <!-- 标签面板 -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="ZX">
+                <!-- 轮播图 -->
+                <div class="banner">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="./images/index/banner01.png">
+                                <div class="carousel-caption">
+                                    firstfirstfirstfirstfirst
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./images/index/banner01.png">
+                                <div class="carousel-caption">
+                                    two
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./images/index/banner01.png">
+                                <div class="carousel-caption">
+                                    three
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- 内容 -->
-        <div class="box clearfix">
-            <div class="outer clearfix">
-                <div class="content w clearfix">
-                    <div class="imgs clearfix">
-                        <img src="./images/index/img0.png">
-                    </div>
-                    <div class="news clearfix">
-                        <h5 class="top">
+                <!-- 内容 -->
+                <div class="box clearfix">
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
                             Twitter创始人出售30%持股自称
                         </h5>
-                        <div class="bottom">
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
+                            Twitter创始人出售30%持股自称
+                        </h5>
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
+                            Twitter创始人出售30%持股自称
+                        </h5>
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer w clearfix">
+                        <h5 class="bigTop clearfix">Apple Pay能摆脱支付宝、微信吊打吗?</h5>
+                        <div class="row">
+                            <div class="col-xs-12"> <img src="./images/index/bigImg.png" class="img-responsive bigImg" alt="Responsive image"></div>
+                        </div>
+                        <div class="bigTime">
                             <div class="category">
                                 网易新闻
                             </div>
                             <div class="time">12:30</div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="outer clearfix">
-                <div class="content w clearfix">
-                    <div class="imgs clearfix">
-                        <img src="./images/index/img0.png">
+                    <div class="outer w clearfix">
+                        <h5 class="bigTop clearfix">马云给雷军的一份d大礼</h5>
+                        <div class="middleImg row">
+                            <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
+                            <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
+                            <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
+                        </div>
+                        <div class="bigTime">
+                            <div class="category">
+                                一点质询
+                            </div>
+                            <div class="time">12:30</div>
+                        </div>
                     </div>
-                    <div class="news clearfix">
-                        <h5 class="top">
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
                             Twitter创始人出售30%持股自称
                         </h5>
-                        <div class="bottom">
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="JR">
+                <!-- 内容 -->
+                <div class="box clearfix">
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
+                            Twitter创始人出售30%持股自称
+                        </h5>
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
+                            Twitter创始人出售30%持股自称
+                        </h5>
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
+                            Twitter创始人出售30%持股自称
+                        </h5>
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer w clearfix">
+                        <h5 class="bigTop clearfix">Apple Pay能摆脱支付宝、微信吊打吗?</h5>
+                        <div class="row">
+                            <div class="col-xs-12"> <img src="./images/index/bigImg.png" class="img-responsive bigImg" alt="Responsive image"></div>
+                        </div>
+                        <div class="bigTime">
                             <div class="category">
                                 网易新闻
                             </div>
                             <div class="time">12:30</div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="outer clearfix">
-                <div class="content w clearfix">
-                    <div class="imgs clearfix">
-                        <img src="./images/index/img0.png">
+                    <div class="outer w clearfix">
+                        <h5 class="bigTop clearfix">马云给雷军的一份d大礼</h5>
+                        <div class="middleImg row">
+                            <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
+                            <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
+                            <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
+                        </div>
+                        <div class="bigTime">
+                            <div class="category">
+                                一点质询
+                            </div>
+                            <div class="time">12:30</div>
+                        </div>
                     </div>
-                    <div class="news clearfix">
-                        <h5 class="top">
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
                             Twitter创始人出售30%持股自称
                         </h5>
-                        <div class="bottom">
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="KJ">
+                <!-- 轮播图 -->
+                <div class="banner">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="./images/index/banner01.png">
+                                <div class="carousel-caption">
+                                    firstfirstfirstfirstfirst
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./images/index/banner01.png">
+                                <div class="carousel-caption">
+                                    two
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./images/index/banner01.png">
+                                <div class="carousel-caption">
+                                    three
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 内容 -->
+                <div class="box clearfix">
+                    <div class="outer w clearfix">
+                        <h5 class="bigTop clearfix">Apple Pay能摆脱支付宝、微信吊打吗?</h5>
+                        <div class="row">
+                            <div class="col-xs-12"> <img src="./images/index/bigImg.png" class="img-responsive bigImg" alt="Responsive image"></div>
+                        </div>
+                        <div class="bigTime">
                             <div class="category">
                                 网易新闻
                             </div>
                             <div class="time">12:30</div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="outer w clearfix">
-                <h5 class="bigTop clearfix">Apple Pay能摆脱支付宝、微信吊打吗?</h5>
-                <div class="row">
-                    <div class="col-xs-12"> <img src="./images/index/bigImg.png" class="img-responsive bigImg" alt="Responsive image"></div>
-                </div>
-                <!-- <img class="bigImg img-responsive" src="./images/index/bigImg.png"> -->
-                <div class="bigTime">
-                    <div class="category">
-                        网易新闻
+                    <div class="outer w clearfix">
+                        <h5 class="bigTop clearfix">马云给雷军的一份d大礼</h5>
+                        <div class="middleImg row">
+                            <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
+                            <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
+                            <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
+                        </div>
+                        <div class="bigTime">
+                            <div class="category">
+                                一点质询
+                            </div>
+                            <div class="time">12:30</div>
+                        </div>
                     </div>
-                    <div class="time">12:30</div>
-                </div>
-            </div>
-            <div class="outer w clearfix">
-                <h5 class="bigTop clearfix">马云给雷军的一份d大礼</h5>
-                <div class="middleImg row">
-                    <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
-                    <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
-                    <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
-                </div>
-                <div class="bigTime">
-                    <div class="category">
-                        一点质询
-                    </div>
-                    <div class="time">12:30</div>
-                </div>
-            </div>
-            <div class="outer clearfix">
-                <div class="content w clearfix">
-                    <div class="imgs clearfix">
-                        <img src="./images/index/img0.png">
-                    </div>
-                    <div class="news clearfix">
-                        <h5 class="top">
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
                             Twitter创始人出售30%持股自称
                         </h5>
-                        <div class="bottom">
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="QC">
+                <!-- 轮播图 -->
+                <div class="banner">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="./images/index/banner01.png">
+                                <div class="carousel-caption">
+                                    firstfirstfirstfirstfirst
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./images/index/banner01.png">
+                                <div class="carousel-caption">
+                                    two
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./images/index/banner01.png">
+                                <div class="carousel-caption">
+                                    three
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 内容 -->
+                <div class="box clearfix">
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
+                            Twitter创始人出售30%持股自称
+                        </h5>
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
+                            Twitter创始人出售30%持股自称
+                        </h5>
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
+                            Twitter创始人出售30%持股自称
+                        </h5>
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer w clearfix">
+                        <h5 class="bigTop clearfix">Apple Pay能摆脱支付宝、微信吊打吗?</h5>
+                        <div class="row">
+                            <div class="col-xs-12"> <img src="./images/index/bigImg.png" class="img-responsive bigImg" alt="Responsive image"></div>
+                        </div>
+                        <div class="bigTime">
                             <div class="category">
                                 网易新闻
                             </div>
                             <div class="time">12:30</div>
+                        </div>
+                    </div>
+                    <div class="outer w clearfix">
+                        <h5 class="bigTop clearfix">马云给雷军的一份d大礼</h5>
+                        <div class="middleImg row">
+                            <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
+                            <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
+                            <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
+                        </div>
+                        <div class="bigTime">
+                            <div class="category">
+                                一点质询
+                            </div>
+                            <div class="time">12:30</div>
+                        </div>
+                    </div>
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
+                            Twitter创始人出售30%持股自称
+                        </h5>
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CJ">
+                <!-- 轮播图 -->
+                <div class="banner">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="./images/index/banner01.png">
+                                <div class="carousel-caption">
+                                    firstfirstfirstfirstfirst
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./images/index/banner01.png">
+                                <div class="carousel-caption">
+                                    two
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./images/index/banner01.png">
+                                <div class="carousel-caption">
+                                    three
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 内容 -->
+                <div class="box clearfix">
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
+                            Twitter创始人出售30%持股自称
+                        </h5>
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
+                            Twitter创始人出售30%持股自称
+                        </h5>
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
+                            Twitter创始人出售30%持股自称
+                        </h5>
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer w clearfix">
+                        <h5 class="bigTop clearfix">Apple Pay能摆脱支付宝、微信吊打吗?</h5>
+                        <div class="row">
+                            <div class="col-xs-12"> <img src="./images/index/bigImg.png" class="img-responsive bigImg" alt="Responsive image"></div>
+                        </div>
+                        <div class="bigTime">
+                            <div class="category">
+                                网易新闻
+                            </div>
+                            <div class="time">12:30</div>
+                        </div>
+                    </div>
+                    <div class="outer w clearfix">
+                        <h5 class="bigTop clearfix">马云给雷军的一份d大礼</h5>
+                        <div class="middleImg row">
+                            <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
+                            <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
+                            <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
+                        </div>
+                        <div class="bigTime">
+                            <div class="category">
+                                一点质询
+                            </div>
+                            <div class="time">12:30</div>
+                        </div>
+                    </div>
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
+                            Twitter创始人出售30%持股自称
+                        </h5>
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="ZZ">
+                <!-- 轮播图 -->
+                <div class="banner">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="./images/index/banner01.png">
+                                <div class="carousel-caption">
+                                    firstfirstfirstfirstfirst
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./images/index/banner01.png">
+                                <div class="carousel-caption">
+                                    two
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./images/index/banner01.png">
+                                <div class="carousel-caption">
+                                    three
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 内容 -->
+                <div class="box clearfix">
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
+                            Twitter创始人出售30%持股自称
+                        </h5>
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
+                            Twitter创始人出售30%持股自称
+                        </h5>
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
+                            Twitter创始人出售30%持股自称
+                        </h5>
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer w clearfix">
+                        <h5 class="bigTop clearfix">Apple Pay能摆脱支付宝、微信吊打吗?</h5>
+                        <div class="row">
+                            <div class="col-xs-12"> <img src="./images/index/bigImg.png" class="img-responsive bigImg" alt="Responsive image"></div>
+                        </div>
+                        <div class="bigTime">
+                            <div class="category">
+                                网易新闻
+                            </div>
+                            <div class="time">12:30</div>
+                        </div>
+                    </div>
+                    <div class="outer w clearfix">
+                        <h5 class="bigTop clearfix">马云给雷军的一份d大礼</h5>
+                        <div class="middleImg row">
+                            <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
+                            <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
+                            <div class="col-xs-4"> <img src="./images/index/middleImg.png" class="img-responsive" alt="Responsive image"></div>
+                        </div>
+                        <div class="bigTime">
+                            <div class="category">
+                                一点质询
+                            </div>
+                            <div class="time">12:30</div>
+                        </div>
+                    </div>
+                    <div class="outer clearfix">
+                        <div class="content w clearfix">
+                            <div class="imgs clearfix">
+                                <img src="./images/index/img0.png">
+                            </div>
+                            <div class="news clearfix">
+                                <h5 class="top">
+                            Twitter创始人出售30%持股自称
+                        </h5>
+                                <div class="bottom">
+                                    <div class="category">
+                                        网易新闻
+                                    </div>
+                                    <div class="time">12:30</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -186,20 +768,22 @@
             <p>Copyright经理世界网</p>
         </div>
         <!-- 尾部 -->
-        <div class="footer">
-            <a href="#">
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+            <div class="footer container">
+                <a href="#">
                首页
                <i class="glyphicon glyphicon-credit-card"></i>
             </a>
-            <a href="./page/vedio.html">
+                <a href="./page/vedio.html">
             视频
             <i class="glyphicon glyphicon-expand"></i>
             </a>
-            <a href="./page/login.html">
+                <a href="./page/login.html">
             我
             <i class="glyphicon glyphicon-user"></i>
             </a>
-        </div>
+            </div>
+        </nav>
         <!-- 返回图标 -->
         <div class="back">
             <a href="#goTop">
@@ -208,7 +792,10 @@
         </div>
     </div>
 </body>
-<script src="./js/common/jquery-3.2.1.min.js"></script>
-<script src="./js/common/bootstrap/js/bootstrap.min.js"></script>
+<script src="./common/jquery-3.2.1.min.js"></script>
+<script src="./common/bootstrap/js/bootstrap.min.js"></script>
+<script src="./common/hammer.min.js"></script>
+<script SRC="./js/index.js"></script>
+</script>
 
 </html>

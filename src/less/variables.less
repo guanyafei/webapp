@@ -23,14 +23,42 @@ a {
     color: rgb(0, 0, 0);
 }
 
-//清除默认padding,margin
+//清除bootstrap默认padding,margin
 .col-xs-4,
 .col-xs-12 {
     padding: 0;
     margin-left: 0;
     margin-right: 0;
 }
-
+//清除bootstrap导航上边框
+.navbar-fixed-bottom,.navbar-fixed-top{
+    border-width: 0 0 0;
+    min-height: 0;
+}
+//修改bootstrap的tab标签默认样式
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    border: 0;
+}
+.nav-tabs {
+    border-bottom: 0;
+}
+.nav-tabs>li {
+    float: left;
+    margin-bottom: 0;
+}
+.nav-tabs>li>a {
+    margin-right: 0;
+    line-height: 0;
+    border: 0;
+    border-radius: 0 0 0 0;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: transparent;
+    border: 0;
+    border-bottom-color: transparent;
+}
 //字体
 body {
     font-size: 375px/@variable;

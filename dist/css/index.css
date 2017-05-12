@@ -14,6 +14,38 @@ a {
   margin-left: 0;
   margin-right: 0;
 }
+.navbar-fixed-bottom,
+.navbar-fixed-top {
+  border-width: 0 0 0;
+  min-height: 0;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  border: 0;
+}
+.nav-tabs {
+  border-bottom: 0;
+}
+.nav-tabs > li {
+  float: left;
+  margin-bottom: 0;
+}
+.nav-tabs > li > a {
+  margin-right: 0;
+  line-height: 0;
+  border: 0;
+  border-radius: 0 0 0 0;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  color: #555;
+  cursor: default;
+  background-color: transparent;
+  border: 0;
+  border-bottom-color: transparent;
+}
 body {
   font-size: 12.5px;
 }
@@ -79,6 +111,9 @@ img {
 table {
   border-collapse: collapse;
 }
+.index {
+  padding: 3.2rem 0 4.4rem 0;
+}
 .index .header {
   height: 3.04rem;
   background-color: pink;
@@ -114,7 +149,7 @@ table {
   overflow-x: scroll;
 }
 .index .nav div ul {
-  width: 1000000%;
+  width: 24rem;
 }
 .index .nav div ul li {
   float: left;
@@ -132,12 +167,17 @@ table {
   left: 50%;
   bottom: 0;
   margin-left: -0.48rem;
-  border: 0.04rem solid red;
   height: 0.04rem;
   width: 0.96rem;
 }
-.index .nav div ul li a:hover {
+.index .nav div ul li a.active {
   color: red;
+  font-size: 1.2rem;
+}
+.index .nav div ul li a.active > i {
+  border: 0.04rem solid red;
+}
+.index .nav div ul li a:hover {
   text-decoration: none;
 }
 .index .nav .go {
@@ -277,9 +317,10 @@ table {
   font-size: 1.5rem;
 }
 .index .back {
+  display: none;
   position: fixed;
   right: 0.8rem;
-  bottom: 4.8rem;
+  bottom: 6.4rem;
 }
 .index .back a {
   display: block;

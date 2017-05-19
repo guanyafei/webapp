@@ -46,6 +46,10 @@ a {
   border: 0;
   border-bottom-color: transparent;
 }
+a.list-group-item:hover,
+a.list-group-item:focus {
+  background-color: transparent;
+}
 body {
   font-size: 12.5px;
 }
@@ -136,6 +140,7 @@ table {
   position: absolute;
   top: 1.36rem;
   left: 0.96rem;
+  font-size: 1.1rem;
 }
 .serch .hotSearch {
   background-color: #ffffff;
@@ -169,10 +174,6 @@ table {
 .serch .searchHistory .list-group .list-group-item span {
   float: right;
   color: #e1e1e1;
-}
-.serch .searchHistory .list-group a.list-group-item:hover,
-.serch .searchHistory .list-group a.list-group-item:focus {
-  background-color: transparent;
 }
 .serch .searchHistory .list-group a:last-child,
 .serch .searchHistory .list-group a:first-child {

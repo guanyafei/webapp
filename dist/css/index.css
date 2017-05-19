@@ -46,6 +46,10 @@ a {
   border: 0;
   border-bottom-color: transparent;
 }
+a.list-group-item:hover,
+a.list-group-item:focus {
+  background-color: transparent;
+}
 body {
   font-size: 12.5px;
 }
@@ -291,6 +295,9 @@ table {
   background-color: #595959;
   padding: 0.72rem 0;
 }
+.index .links a {
+  display: inline-block;
+}
 .index .links span {
   display: inline-block;
   margin: 0.48rem 1.2rem;
@@ -308,6 +315,7 @@ table {
   padding-bottom: 0.48rem;
   text-align: center;
   position: relative;
+  text-decoration: none;
 }
 .index .footer a i.glyphicon {
   position: absolute;

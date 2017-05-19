@@ -46,6 +46,10 @@ a {
   border: 0;
   border-bottom-color: transparent;
 }
+a.list-group-item:hover,
+a.list-group-item:focus {
+  background-color: transparent;
+}
 body {
   font-size: 12.5px;
 }
@@ -135,6 +139,7 @@ table {
   position: absolute;
   top: 0.8rem;
   left: 0.96rem;
+  font-size: 1.1rem;
 }
 .searchResult .top .remove {
   position: absolute;

@@ -91,7 +91,7 @@ gulp.task('serve', ['fonts', 'commonJs','scripts', 'less', 'html','img'], () => 
         }
     });
     gulp.watch('./src/fonts/*.{eot,svg,ttf,woff,woff2}', ['watch-fonts']);
-    gulp.watch('./src/index.html', ['watch-html']);
+    gulp.watch('./src/**/*.html', ['watch-html']);
     gulp.watch('./src/less/**/*.less', ['watch-less']);
     gulp.watch('./src/js/*.js', ['watch-scripts']);
 });

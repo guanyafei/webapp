@@ -46,6 +46,10 @@ a {
   border: 0;
   border-bottom-color: transparent;
 }
+a.list-group-item:hover,
+a.list-group-item:focus {
+  background-color: transparent;
+}
 body {
   font-size: 12.5px;
 }

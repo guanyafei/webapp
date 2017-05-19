@@ -31,7 +31,7 @@
   <div id="allmap"></div>
 </div>
 </body>
-</html>
+<script src="../common/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
   // 百度地图API功能
   var map = new BMap.Map("allmap");            // 创建Map实例
@@ -41,4 +41,11 @@
     renderOptions: {map: map}
   });
   local.search("计世传媒");
+
+
+// 返回上一页
+$('.glyphicon').click(function(){
+    window.history.go(-1);
+});
 </script>
+</html>

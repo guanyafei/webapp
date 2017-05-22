@@ -50,6 +50,84 @@ a.list-group-item:hover,
 a.list-group-item:focus {
   background-color: transparent;
 }
+a.btn {
+  padding: 0;
+  border: 0;
+  outline: 0 0 0 0;
+  font-size: 1rem;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: 0;
+  outline-offset: 0;
+}
+a.btn:hover,
+a.btn:focus {
+  background-color: transparent;
+}
+.btn:active,
+.btn.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
+}
+.modal .modal-dialog {
+  position: absolute;
+  bottom: -3.44rem;
+  left: 0;
+  margin: 0;
+  width: 100%;
+}
+.modal .modal-dialog .modal-content {
+  border-radius: 0;
+  border: 0;
+}
+.modal .modal-dialog .modal-content .modal-body {
+  padding: 0;
+}
+.modal .modal-dialog .modal-content .modal-footer {
+  padding: 1.44rem 0;
+  text-align: center;
+}
+.modal .modal-dialog .modal-content .modal-footer .close {
+  font-size: inherit;
+  font-weight: 100;
+  float: none;
+  opacity: 1;
+}
+.modal.slide .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+}
+.modal-backdrop.slide {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.slide {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+.slide.in {
+  opacity: 1;
+}
 body {
   font-size: 12.5px;
 }
@@ -117,53 +195,59 @@ table {
 }
 #contain {
   background-color: #efefef;
+  padding: 3.2rem 0 5rem 0;
 }
-#contain .nav {
+#contain .box {
   background-color: #f7f7f7;
   position: relative;
   background-color: #ffffff;
 }
-#contain .nav div {
+#contain .box .container {
   overflow: hidden;
   overflow-x: scroll;
 }
-#contain .nav div ul {
-  width: 1000000%;
+#contain .box .container ul {
+  width: 24rem;
 }
-#contain .nav div ul li {
+#contain .box .container ul li {
   float: left;
 }
-#contain .nav div ul li a {
+#contain .box .container ul li a {
   display: block;
   padding: 0 0.88rem;
   position: relative;
   height: 3.2rem;
   line-height: 3.2rem;
 }
-#contain .nav div ul li a i {
+#contain .box .container ul li a i {
   display: inline-block;
   position: absolute;
   left: 50%;
   bottom: 0;
   margin-left: -0.48rem;
-  border: 0.04rem solid red;
   height: 0.04rem;
   width: 0.96rem;
 }
-#contain .nav div ul li a:hover {
+#contain .box .container ul li a.active {
   color: red;
+  font-size: 1.2rem;
+}
+#contain .box .container ul li a.active > i {
+  border: 0.04rem solid red;
+}
+#contain .box .container ul li a:hover {
   text-decoration: none;
 }
-#contain .nav .search {
+#contain .box .search {
   position: absolute;
   right: 1.2rem;
   top: 50%;
   margin-top: -0.8rem;
 }
-#contain .nav .search a {
+#contain .box .search a {
   display: inline-block;
 }
-#contain .nav .search a img {
+#contain .box .search a img {
   width: 1.52rem;
   height: 1.6rem;
 }
@@ -226,15 +310,60 @@ table {
 }
 #contain .footer a {
   display: inline-block;
-  width: 32.7222222222222%;
+  width: 33.333333333%;
+  float: left;
   padding-top: 2.72rem;
   padding-bottom: 0.48rem;
   text-align: center;
   position: relative;
+  text-decoration: none;
 }
-#contain .footer a i {
+#contain .footer a i.glyphicon {
   position: absolute;
   top: 0.56rem;
-  left: 42%;
+  left: 50%;
+  margin-left: -0.64rem;
   font-size: 1.5rem;
+}
+#contain .back {
+  display: none;
+  position: fixed;
+  right: 0.8rem;
+  bottom: 6.4rem;
+}
+#contain .back a {
+  display: block;
+}
+#contain .back img {
+  width: 3.12rem;
+  height: 3.12rem;
+}
+#contain .shareIcon {
+  border-bottom: 0.04rem solid #f0f0f0;
+  padding: 7.6rem 0 2rem 0;
+}
+#contain .shareIcon > a {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 20%;
+  text-align: center;
+  color: #aaaaaa;
+  text-decoration: none;
+}
+#contain .shareIcon > a i.iconfont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -2.28rem;
+  margin-top: -6rem;
+  display: inline-block;
+  width: 4.56rem;
+  height: 4.56rem;
+  border-radius: 50%;
+  border: 1px solid #f0f0f0;
+  text-align: center;
+  line-height: 4.56rem;
+  font-size: 1.5rem;
+  color: #000000;
 }

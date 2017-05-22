@@ -20,7 +20,8 @@ gulp.task('less', () => {
 });
 
 gulp.task('fonts', () => {
-    return gulp.src('./src/fonts/*.{eot,svg,ttf,woff,woff2}')
+    return gulp.src('./src/fonts/*')
+        .pipe(gulpif(argv.deploy, cssnano()))
         .pipe(gulp.dest('./dist/fonts'));
 });
 
@@ -45,7 +46,7 @@ gulp.task('scripts', () => {
         ])
         .pipe(gulpif(argv.deploy, uglify()))
         .pipe(babel({
-            presets:['es2015']
+            presets: ['es2015']
         }))
         .pipe(gulp.dest('./dist/js'));
 });
@@ -58,9 +59,9 @@ gulp.task('html', () => {
 });
 
 //删除dist文件夹
-gulp.task('del', function () {
-  gulp.src('./dist', {read: false})
-    .pipe(clean());
+gulp.task('del', function() {
+    gulp.src('./dist', { read: false })
+        .pipe(clean());
 });
 
 //browserSync  文件保存自动刷新浏览器
@@ -84,7 +85,7 @@ gulp.task('watch-scripts', ['scripts'], (callback) => {
 });
 
 
-gulp.task('serve', ['fonts', 'commonJs','scripts', 'less', 'html','img'], () => {
+gulp.task('serve', ['fonts', 'commonJs', 'scripts', 'less', 'html', 'img'], () => {
     browserSync.init({
         server: {
             baseDir: "./dist/"

@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../common/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/details.css">
+    <style type="text/css">
+    /* svg图标字体样式 */
+    .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+    }
+    </style>
     <title>CEOCIO</title>
 </head>
 
@@ -120,16 +130,26 @@
             </div>
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal slide" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="shareIcon w">
-                            <a href="#">微信好友<i class="iconfont">&#xe603;</i></a>
-                            <a href="#">朋友圈<i class="iconfont">&#xe519;</i></a>
-                            <a href="#">QQ好友<i class="iconfont">&#xe68b;</i></a>
-                            <a href="#">QQ空间<i class="iconfont">&#xe65d;</i></a>
-                            <a href="#">新浪微博<i class="iconfont">&#xe60c;</i></a>
+                            <a href="#">微信好友<i class="iconfont"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-weixin1"></use>
+                            </svg></i></a>
+                            <a href="#">朋友圈<i class="iconfont"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-pengyouquan"></use>
+                            </svg></i></a>
+                            <a href="#">QQ好友<i class="iconfont"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-QQ"></use>
+                            </svg></i></a>
+                            <a href="#">QQ空间<i class="iconfont"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-qqkongjian"></use>
+                            </svg></i></a>
+                            <a href="#">新浪微博<i class="iconfont"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-weibo"></use>
+                            </svg></i></a>
                         </div>
                     </div>
                     <div class="modal-footer w">
@@ -142,4 +162,6 @@
 </body>
 <script src="../common/jquery-3.2.1.min.js"></script>
 <script src="../common/bootstrap/js/bootstrap.min.js"></script>
+<script src="../fonts/iconfont.js"></script>
+
 </html>

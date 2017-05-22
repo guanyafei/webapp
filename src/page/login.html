@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../common/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <style type="text/css">
+    /* svg图标字体样式 */
+    .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+    }
+    </style>
     <title>CEOCIO</title>
 </head>
 
@@ -39,11 +49,20 @@
         </div>
         <!-- 分享 -->
         <div class="share w">
-        	<i href="#" class="iconfont">&#xe648;</i>
-        	<i href="#" class="iconfont">&#xe603;</i>
-        	<i href="#" class="iconfont">&#xe60c;</i>
+            <i href="#" class="iconfont"><svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-qq"></use>
+            </svg></i>
+            <i href="#" class="iconfont"><svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-icon"></use>
+            </svg></i>
+            <i href="#" class="iconfont"><svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-weixin"></use>
+            </svg></i>
         </div>
     </div>
 </body>
+<script src="../common/jquery-3.2.1.min.js"></script>
+<script src="../fonts/iconfont.js"></script>
+<script src="../js/login.js"></script>
 
 </html>

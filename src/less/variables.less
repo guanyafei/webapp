@@ -135,7 +135,7 @@ a.btn:focus {
 }
 
 //修改模态框弹出方式----向上淡出
-.modal.slide .modal-dialog {
+.modal.slideUp .modal-dialog {
     -webkit-transition: -webkit-transform .3s ease-out;
     -o-transition: -o-transform .3s ease-out;
     transition: transform .3s ease-out;
@@ -152,19 +152,19 @@ a.btn:focus {
     transform: translate(0, -25%);
 }
 
-.modal-backdrop.slide {
+.modal-backdrop.slideUp {
     filter: alpha(opacity=0);
     opacity: 0;
 }
 
-.slide {
+.slideUp {
     opacity: 0;
     -webkit-transition: opacity .15s linear;
     -o-transition: opacity .15s linear;
     transition: opacity .15s linear;
 }
 
-.slide.in {
+.slideUp.in {
     opacity: 1;
 }
 

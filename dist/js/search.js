@@ -22,6 +22,11 @@ $(".list-group a:last").click(function () {
 //搜索框查询
 $('.glyphicon-search').click(function () {
 	var inputVal = $('.top .form-control').val();
-	alert($.query(inputVal));
+	if (inputVal === '') {
+		alert('查询条件为空!');
+		return;
+	} else {
+		alert($.query(inputVal));
+	}
 	window.open('http://localhost:3000/page/searchResult.html', '_self', '', true);
 });

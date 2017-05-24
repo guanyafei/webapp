@@ -22,3 +22,11 @@ $(window).scroll(function () {
         $(".back").fadeOut("normal");
     }
 });
+
+//设置视频高度与遮罩图片高度一致  防止样式错乱
+$("video").height($("img.img-responsive").height());
+//点击播放按钮 视频播放
+$(".playBtn").click(function () {
+    $(this).parent().children("img,span").fadeOut();
+    $(this).parent().children("video")[0].play();
+});

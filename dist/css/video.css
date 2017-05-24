@@ -1,0 +1,374 @@
+html {
+  font-size: 12.5px;
+}
+.container-fluid {
+  margin: 0 0;
+  padding: 0 0;
+}
+a {
+  color: #000000;
+}
+.col-xs-4,
+.col-xs-12 {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.navbar-fixed-bottom,
+.navbar-fixed-top {
+  border-width: 0 0 0;
+  min-height: 0;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  border: 0;
+}
+.nav-tabs {
+  border-bottom: 0;
+}
+.nav-tabs > li {
+  float: left;
+  margin-bottom: 0;
+}
+.nav-tabs > li > a {
+  margin-right: 0;
+  line-height: 0;
+  border: 0;
+  border-radius: 0 0 0 0;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  color: #555;
+  cursor: default;
+  background-color: transparent;
+  border: 0;
+  border-bottom-color: transparent;
+}
+a.list-group-item:hover,
+a.list-group-item:focus {
+  background-color: transparent;
+}
+a.btn {
+  padding: 0;
+  border: 0;
+  outline: 0 0 0 0;
+  font-size: 1rem;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: 0;
+  outline-offset: 0;
+}
+a.btn:hover,
+a.btn:focus {
+  background-color: transparent;
+}
+.btn:active,
+.btn.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
+}
+.modal .modal-dialog {
+  position: absolute;
+  bottom: -3.52rem;
+  left: 0;
+  margin: 0;
+  width: 100%;
+}
+.modal .modal-dialog .modal-content {
+  border-radius: 0;
+  border: 0;
+}
+.modal .modal-dialog .modal-content .modal-body {
+  padding: 0;
+}
+.modal .modal-dialog .modal-content .modal-footer {
+  padding: 1.44rem 0;
+  text-align: center;
+}
+.modal .modal-dialog .modal-content .modal-footer .close {
+  font-size: inherit;
+  font-weight: 100;
+  float: none;
+  opacity: 1;
+}
+.modal.slideUp .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+}
+.modal-backdrop.slideUp {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.slideUp {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+.slideUp.in {
+  opacity: 1;
+}
+body {
+  font-size: 12.5px;
+}
+.w {
+  margin: 0 0.8rem;
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+}
+fieldset,
+img,
+input,
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+select,
+input,
+button {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  margin: 0;
+}
+textarea {
+  resize: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+}
+#contain {
+  background-color: #efefef;
+  padding: 3.2rem 0 5rem 0;
+}
+#contain .box {
+  background-color: #f7f7f7;
+  position: relative;
+  background-color: #ffffff;
+}
+#contain .box .container {
+  overflow: hidden;
+  overflow-x: scroll;
+}
+#contain .box .container ul {
+  width: 24rem;
+}
+#contain .box .container ul li {
+  float: left;
+}
+#contain .box .container ul li a {
+  display: block;
+  padding: 0 0.88rem;
+  position: relative;
+  height: 3.2rem;
+  line-height: 3.2rem;
+}
+#contain .box .container ul li a i {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -0.48rem;
+  height: 0.04rem;
+  width: 0.96rem;
+}
+#contain .box .container ul li a.active {
+  color: red;
+  font-size: 1.2rem;
+}
+#contain .box .container ul li a.active > i {
+  border: 0.04rem solid red;
+}
+#contain .box .container ul li a:hover {
+  text-decoration: none;
+}
+#contain .box .search {
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  margin-top: -0.8rem;
+}
+#contain .box .search a {
+  display: inline-block;
+}
+#contain .box .search a img {
+  width: 1.52rem;
+  height: 1.6rem;
+}
+#contain .box {
+  margin-top: 0.4rem;
+  background-color: #ffffff;
+}
+#contain .box .top {
+  padding: 0.64rem 0;
+}
+#contain .box .top .logo {
+  padding-left: 0.4rem;
+  float: left;
+}
+#contain .box .top .logo img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+#contain .box .top .logo span {
+  color: #b4b4b4;
+  padding-left: 0.8rem;
+}
+#contain .box .top .watcher {
+  float: right;
+  color: #b4b4b4;
+}
+#contain .box .middle {
+  position: relative;
+}
+#contain .box .middle span {
+  position: absolute;
+  bottom: 0.64rem;
+  right: 0.8rem;
+}
+#contain .box .middle img:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#contain .box .middle img:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -1.72rem;
+  margin-top: -1.72rem;
+  width: 3.44rem;
+  height: 3.44rem;
+}
+#contain .box .bottom {
+  padding-bottom: 1.44rem;
+}
+#contain .box .bottom p {
+  padding: 0.96rem 0;
+}
+#contain .box .bottom .time {
+  color: #a6a6a6;
+  float: left;
+}
+#contain .box .bottom .share {
+  color: #a6a6a6;
+  float: right;
+}
+#contain .footer {
+  background-color: #ffffff;
+}
+#contain .footer a {
+  display: inline-block;
+  width: 33.333333333%;
+  float: left;
+  padding-top: 2.72rem;
+  padding-bottom: 0.48rem;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+}
+#contain .footer a i.glyphicon {
+  position: absolute;
+  top: 0.56rem;
+  left: 50%;
+  margin-left: -0.64rem;
+  font-size: 1.5rem;
+}
+#contain .back {
+  display: none;
+  position: fixed;
+  right: 0.8rem;
+  bottom: 6.4rem;
+}
+#contain .back a {
+  display: block;
+}
+#contain .back img {
+  width: 3.12rem;
+  height: 3.12rem;
+}
+#contain .shareIcon {
+  border-bottom: 0.04rem solid #f0f0f0;
+  padding: 7.6rem 0 2rem 0;
+}
+#contain .shareIcon > a {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 20%;
+  text-align: center;
+  color: #aaaaaa;
+  text-decoration: none;
+}
+#contain .shareIcon > a i.iconfont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -2.28rem;
+  margin-top: -6rem;
+  display: inline-block;
+  width: 4.56rem;
+  height: 4.56rem;
+  border-radius: 50%;
+  border: 1px solid #f0f0f0;
+  text-align: center;
+  line-height: 4.56rem;
+  font-size: 1.5rem;
+  color: #000000;
+}

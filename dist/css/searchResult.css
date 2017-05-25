@@ -215,7 +215,8 @@ table {
 }
 .searchResult .top .search .glyphicon-search {
   position: absolute;
-  top: 0.8rem;
+  top: 50%;
+  margin-top: -0.56rem;
   left: 0.96rem;
   font-size: 1.1rem;
 }

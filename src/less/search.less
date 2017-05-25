@@ -1,31 +1,65 @@
 @import "./variables.less";
 .serch {
     background-color: rgb(247, 247, 247);
-    // 搜索
+    // 搜索 
+    // .top {
+    //     position: relative;
+    //     color: rgb(165, 170, 178);
+    //     padding: 16rem/@fs 0;
+    //     .form-control {
+    //      display: inline-block;
+    //         border-radius: 34rem/@fs;
+    //         width: 90%;
+    //         height: 58rem/@fs;
+    //         padding-left: 64rem/@fs;
+    //         border-color: rgb(233, 233, 233);
+    //     }
+    //     .cancle {
+    //         margin-top: 14rem/@fs;
+    //         margin-left: 10rem/@fs;
+    //         color: rgb(229, 55, 43);
+    //     }
+    //     span:last-child {
+    //         position: absolute;
+    //         top: 34rem/@fs;
+    //         left: 24rem/@fs;
+    //         font-size: 1.1rem;
+    //     }
+    // } 
     .top {
         position: relative;
         color: rgb(165, 170, 178);
         padding: 16rem/@fs 0;
         .form-control {
-        	display: inline-block;
+            display: inline-block;
             border-radius: 34rem/@fs;
-            width: 90%;
             height: 58rem/@fs;
             padding-left: 64rem/@fs;
             border-color: rgb(233, 233, 233);
         }
+        .search {
+            padding-left: 0;
+            padding-right: 0;
+            position: relative;
+            .glyphicon-search {
+                position: absolute;
+                top: 50%;
+                margin-top: -14rem/@fs;
+                left: 24rem/@fs;
+                font-size: 1.1rem;
+            }
+        }
         .cancle {
+            padding-left: 0;
+            padding-right: 0;
             margin-top: 14rem/@fs;
-            margin-left: 10rem/@fs;
-            color: rgb(229, 55, 43);
+            text-align: center;
+            span {
+                text-align: center;
+                color: rgb(229, 55, 43);
+            }
         }
-        span:last-child {
-            position: absolute;
-            top: 34rem/@fs;
-            left: 24rem/@fs;
-            font-size: 1.1rem;
-        }
-    } 
+    }
     // 热门搜索
     .hotSearch {
         background-color: @comColor;
@@ -46,7 +80,7 @@
     }
     // 搜索历史
     .searchHistory {
-    	margin-top: 10rem/@fs;
+        margin-top: 10rem/@fs;
         background-color: @comColor;
         .list-group {
             .list-group-item {

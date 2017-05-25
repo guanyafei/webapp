@@ -204,21 +204,31 @@ table {
 .serch .top .form-control {
   display: inline-block;
   border-radius: 1.36rem;
-  width: 90%;
   height: 2.32rem;
   padding-left: 2.56rem;
   border-color: #e9e9e9;
 }
-.serch .top .cancle {
-  margin-top: 0.56rem;
-  margin-left: 0.4rem;
-  color: #e5372b;
+.serch .top .search {
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
 }
-.serch .top span:last-child {
+.serch .top .search .glyphicon-search {
   position: absolute;
-  top: 1.36rem;
+  top: 50%;
+  margin-top: -0.56rem;
   left: 0.96rem;
   font-size: 1.1rem;
+}
+.serch .top .cancle {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0.56rem;
+  text-align: center;
+}
+.serch .top .cancle span {
+  text-align: center;
+  color: #e5372b;
 }
 .serch .hotSearch {
   background-color: #ffffff;

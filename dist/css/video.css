@@ -276,16 +276,16 @@ table {
 }
 #contain .box .middle {
   position: relative;
+  /* img:first-child {
+                position: absolute;
+                top: 0;
+                left: 0;
+            } */
 }
 #contain .box .middle span {
   position: absolute;
   bottom: 0.64rem;
   right: 0.8rem;
-}
-#contain .box .middle img:first-child {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 #contain .box .middle img:last-child {
   position: absolute;

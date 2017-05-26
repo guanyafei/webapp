@@ -87,11 +87,6 @@
                 bottom: 16rem/@fs;
                 right: 20rem/@fs;
             }
-            /* img:first-child {
-                position: absolute;
-                top: 0;
-                left: 0;
-            } */
             img:last-child {
                 position: absolute;
                 top: 50%;
@@ -100,6 +95,16 @@
                 margin-top: -43rem/@fs;
                 width: 86rem/@fs;
                 height: 86rem/@fs;
+            }
+            .VController{
+                position: absolute;
+                bottom:0;
+                left:0;
+                width:100%;
+               background-color: rgba(0,0,0,.8);
+               div.w{
+                height:64rem/@fs;
+               } 
             }
         }
         .bottom {
@@ -129,14 +134,22 @@
             text-align: center;
             position: relative;
             text-decoration: none;
+            color:rgb(146,146,146);
             i.glyphicon {
                 position: absolute;
                 top: 14rem/@fs;
                 left: 50%;
-                margin-left: -16rem/@fs;
-                font-size: 1.5rem;
+                margin-left: -23rem/@fs;
+                font-size: 1.9rem;
+
             }
         }
+        a:first-child{
+           i.glyphicon{
+              margin-left: -27rem/@fs;
+              font-size: 2.2rem;
+           }
+       }
     }
     //返回图标
     .back {
@@ -146,10 +159,19 @@
         bottom: 160rem/@fs;
         a {
             display: block;
-        }
-        img {
             width: 78rem/@fs;
             height: 78rem/@fs;
+            border-radius: 50%;
+            background-color: rgba(126,129,131,.7);
+            position: relative;
+            .icon{
+                color:rgb(255,255,255);
+                font-size: 2rem;
+                position: absolute;
+                top:50%;
+                left:50%;
+                margin:-25rem/@fs 0 0 -25rem/@fs;
+            }
         }
     }
     // 分享

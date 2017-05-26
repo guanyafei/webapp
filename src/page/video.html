@@ -54,12 +54,21 @@
                         <div class="watcher">1355观看</div>
                     </div>
                     <div class="middle">
-                        <!-- <img src="../images/vedio/bigImg.png" class="img-responsive" alt="Responsive image"> -->
-                        <video width="100%" poster="../images/vedio/bigImg.png">
-                           <source src="../common/80.mp4" type="video/mp4">您的浏览器不支持Video标签。
-                       </video>
-                        <span class="badge"></span>
-                        <img class="playBtn"  src="../images/vedio/vedio.png">
+                        <div class="VBox">
+                            <video width="100%" poster="../images/vedio/bigImg.png">
+                                <source src="../common/80.mp4" type="video/mp4">您的浏览器不支持Video标签。
+                            </video>
+                            <span class="badge"></span>
+                            <img class="playBtn" src="../images/vedio/vedio.png">
+                        </div>
+                        <div class="VController">
+                            <div class="w row">
+                                <div class="col-xs-3">播放按钮</div>
+                                <div class="col-xs-3">进度条</div>
+                                <div class="col-xs-3">声音</div>
+                                <div class="col-xs-3">缩放</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="bottom w clearfix">
                         <p>永安自行车放弃 “共享单车第一股” 桂冠始末</p>
@@ -81,10 +90,9 @@
                         <div class="watcher">1355观看</div>
                     </div>
                     <div class="middle">
-                        <!-- <img src="../images/vedio/bigImg.png" class="img-responsive" alt="Responsive image"> -->
                         <video width="100%" ondurationchange="setVedioTime()" poster="../images/vedio/bigImg.png">
-                           <source src="../common/80.mp4" type="video/mp4">您的浏览器不支持Video标签。
-                       </video>
+                            <source src="../common/80.mp4" type="video/mp4">您的浏览器不支持Video标签。
+                        </video>
                         <span class="badge"></span>
                         <img class="playBtn" src="../images/vedio/vedio.png">
                     </div>
@@ -118,22 +126,36 @@
             <div class="footer container">
                 <a href="../index.html">
                首页
-               <i class="glyphicon glyphicon-credit-card"></i>
+               <i class="glyphicon">
+                   <svg class="icon" aria-hidden="true">
+                     <use xlink:href="#icon-gouwuxinyong"></use>
+                   </svg>
+               </i>
             </a>
                 <a href="./video.html">
             视频
-            <i class="glyphicon glyphicon-expand"></i>
+            <i class="glyphicon">
+                <svg class="icon" aria-hidden="true">
+                   <use xlink:href="#icon-shipinxian"></use>
+                </svg>
+            </i>
             </a>
                 <a href="./loginOrout.html">
             我
-            <i class="glyphicon glyphicon-user"></i>
+            <i class="glyphicon">
+                <svg class="icon" aria-hidden="true">
+                   <use xlink:href="#icon-wode"></use>
+                </svg>
+            </i>
             </a>
             </div>
         </nav>
         <!-- 返回图标 -->
         <div class="back">
             <a href="#goTop">
-                <img src="../images/index/back.png">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-xiangshangjiantou"></use>
+                </svg>
             </a>
         </div>
         <!-- Modal -->

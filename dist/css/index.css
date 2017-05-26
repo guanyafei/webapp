@@ -393,13 +393,18 @@ table {
   text-align: center;
   position: relative;
   text-decoration: none;
+  color: #929292;
 }
 .index .footer a i.glyphicon {
   position: absolute;
   top: 0.56rem;
   left: 50%;
-  margin-left: -0.64rem;
-  font-size: 1.5rem;
+  margin-left: -0.92rem;
+  font-size: 1.9rem;
+}
+.index .footer a:first-child i.glyphicon {
+  margin-left: -1.08rem;
+  font-size: 2.2rem;
 }
 .index .back {
   display: none;
@@ -409,8 +414,17 @@ table {
 }
 .index .back a {
   display: block;
-}
-.index .back img {
   width: 3.12rem;
   height: 3.12rem;
+  border-radius: 50%;
+  background-color: rgba(126, 129, 131, 0.7);
+  position: relative;
+}
+.index .back a .icon {
+  color: #ffffff;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -1rem 0 0 -1rem;
 }

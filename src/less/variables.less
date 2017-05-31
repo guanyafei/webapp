@@ -21,14 +21,31 @@ a {
     color: rgb(0, 0, 0);
 }
 
-//清除bootstrap默认padding,margin
+//清除bootstrap栅格默认padding,margin
 .col-xs-4,
+.col-xs-5,
+.col-xs-3,
+.col-xs-1,
+.col-xs-7,
 .col-xs-12 {
     padding: 0;
     margin-left: 0;
     margin-right: 0;
 }
 
+//清除bootstrap进度条默认样式
+.progress {
+    height: 4px;
+    margin-bottom: 0;
+    overflow: hidden;
+    background-color: rgb(150,150,150);
+    border-radius: 0;
+    -webkit-box-shadow: 0;
+    box-shadow: 0;
+}
+.progress-bar-success {
+    background-color: rgb(255,255,255);
+}
 //清除bootstrap导航上边框
 .navbar-fixed-bottom,
 .navbar-fixed-top {

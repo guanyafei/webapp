@@ -96,15 +96,59 @@
                 width: 86rem/@fs;
                 height: 86rem/@fs;
             }
-            .VController{
+            .VController {
                 position: absolute;
-                bottom:0;
-                left:0;
-                width:100%;
-               background-color: rgba(0,0,0,.8);
-               div.w{
-                height:64rem/@fs;
-               } 
+                bottom: 5rem/@fs;
+                left: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, .8);
+                padding: 14rem/@fs 0;
+                line-height: 1;
+                .icon {
+                    color: rgb(255, 255, 255);
+                    font-size: 2rem;
+                    &.sound {
+                        font-size: 2.2rem;
+                    }
+                }
+                .col-xs-5 {
+                    position: relative;
+                    height: 48rem/@fs;
+                    .shu {
+                        color: rgb(255, 255, 255);
+                        position: absolute;
+                        top: 50%;
+                        left: -1.5rem/@fs;
+                        margin-top: -10rem/@fs;
+                        font-weight: 700;
+                    }
+                }
+                .progress {
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                }
+                .runTime,
+                .totalTime {
+                    line-height: 2.4;
+                    color: rgb(255, 255, 255);
+                }
+                .play {
+                    svg:first-child {
+                        display: block;
+                    }
+                    svg:last-child {
+                        display: none;
+                    }
+                }
+                .pause {
+                    svg:first-child {
+                        display: none;
+                    }
+                    svg:last-child {
+                        display: block;
+                    }
+                }
             }
         }
         .bottom {
@@ -134,22 +178,21 @@
             text-align: center;
             position: relative;
             text-decoration: none;
-            color:rgb(146,146,146);
+            color: rgb(146, 146, 146);
             i.glyphicon {
                 position: absolute;
                 top: 14rem/@fs;
                 left: 50%;
                 margin-left: -23rem/@fs;
                 font-size: 1.9rem;
-
             }
         }
-        a:first-child{
-           i.glyphicon{
-              margin-left: -27rem/@fs;
-              font-size: 2.2rem;
-           }
-       }
+        a:first-child {
+            i.glyphicon {
+                margin-left: -27rem/@fs;
+                font-size: 2.2rem;
+            }
+        }
     }
     //返回图标
     .back {
@@ -162,15 +205,15 @@
             width: 78rem/@fs;
             height: 78rem/@fs;
             border-radius: 50%;
-            background-color: rgba(126,129,131,.7);
+            background-color: rgba(126, 129, 131, .7);
             position: relative;
-            .icon{
-                color:rgb(255,255,255);
+            .icon {
+                color: rgb(255, 255, 255);
                 font-size: 2rem;
                 position: absolute;
-                top:50%;
-                left:50%;
-                margin:-25rem/@fs 0 0 -25rem/@fs;
+                top: 50%;
+                left: 50%;
+                margin: -25rem/@fs 0 0 -25rem/@fs;
             }
         }
     }
@@ -204,5 +247,4 @@
             }
         }
     }
-    // 模态框
 }

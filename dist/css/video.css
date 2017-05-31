@@ -331,8 +331,8 @@ table {
   color: #ffffff;
   position: absolute;
   top: 50%;
-  left: -0.06rem;
-  margin-top: -0.4rem;
+  left: -0.08rem;
+  margin-top: -0.32rem;
   font-weight: 700;
 }
 #contain .box .middle .VController .progress {

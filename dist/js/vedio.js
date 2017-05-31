@@ -90,13 +90,69 @@ var onVideoPlay = function onVideoPlay(videoDom) {
         $(videoDom).parentsUntil(".box").find(".runTime").html(time);
         //进度条进度
         var percent = videoDom.currentTime / videoDom.duration * 100 + "%";
-        // console.log($(videoDom).parentsUntil(".box").find(".progress-bar").get(0));
         $(videoDom).parentsUntil(".box").find(".progress-bar").width(percent);
+        // 竖条位置
+        var shu = $(videoDom).parentsUntil(".box").find(".shu").get(0);
+        shu.style.left = $(videoDom).parentsUntil(".box").find(".progress-bar").width() + "px";
     };
 };
 
 //点击跳转播放位置
-
-var onSkip = function onSkip(videoDom) {
-    console.log($(videoDom).parentsUntil(".box").find(".progress").width());
-};
+$(".progress").each(function (idx, ele) {
+    ele.onclick = function (e) {
+        console.log(e.offsetX);
+        var percent = e.offsetX / ele.offsetWidth * 100 + '%';
+        $(ele).children('.progress-bar').width(percent);
+        $(ele).parentsUntil(".box").find("video")[0].currentTime = $(ele).parentsUntil(".box").find("video")[0].duration * e.offsetX / ele.offsetWidth;
+    };
+});
+//拖动竖条快进或后退视频
+/*$(".shu").each((idx, ele) => {
+    ele.onmousedown = event => {
+        var shu = $(ele).get(0);
+        var progress = $(ele).siblings(".progress").get(0);
+        var e = event || window.event;
+        //点击位置
+        var pageX = event.pageX || event.clientX + document.documentElement.scrollLeft;
+        // 点击瞬间 点击位置在progress中的位置
+        var tapX = pageX - progress.offsetLeft;
+        //竖条跟着触摸点移动
+        progress.onmousemove = event => {
+            var pageX = event.pageX || event.clientX + document.documentElement.scrollLeft;
+            shu.style.left = pageX - tapX + "px";
+        };
+        //触摸停止  移动停止
+        progress.onmouseup = function() {
+            ele.onmousemove = null;
+        };
+    };
+});*/
+//放大
+$(".fullscreen").each(function (idx, ele) {
+    $(ele).click(function () {
+        var video = $(ele).parentsUntil(".box").find("video").get(0);
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.webkitRequestFullScreen) {
+            // 如果 在谷歌里面全屏 
+            // 可以再这里 指定 dom元素的大小
+            video.webkitRequestFullScreen();
+        } else if (video.msRequestFullscreen) {
+            video.msRequestFullscreen();
+        } else if (video.mozRequestFullScreen) {
+            video.mozRequestFullScreen();
+        }
+    });
+});
+//声音控制
+$(".sound").each(function (idx, ele) {
+    $(ele).click(function () {
+        var video = $(ele).parentsUntil(".box").find("video").get(0);
+        console.log(video.muted);
+        if (!video.muted) {
+            video.muted = true;
+        } else {
+            video.muted = false;
+        }
+    });
+});

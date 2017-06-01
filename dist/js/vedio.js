@@ -80,6 +80,18 @@ $(".play").each(function (idx, ele) {
         }
     });
 });
+// 音量按钮设置
+$(".sound").each(function (idx, ele) {
+    $(ele).click(function () {
+        if ($(ele).parentsUntil(".box").find(".sound").hasClass("mute")) {
+            $(ele).parentsUntil(".box").find(".sound").toggleClass("mute");
+            $(ele).parentsUntil(".box").find("video")[0].muted = true;
+        } else {
+            $(ele).parentsUntil(".box").find("video")[0].muted = false;
+            $(ele).parentsUntil(".box").find(".sound").toggleClass("mute");
+        }
+    });
+});
 
 //当前的播放位置发送改变时触发 改变进度条
 var onVideoPlay = function onVideoPlay(videoDom) {
@@ -145,14 +157,14 @@ $(".fullscreen").each(function (idx, ele) {
     });
 });
 //声音控制
-$(".sound").each(function (idx, ele) {
-    $(ele).click(function () {
-        var video = $(ele).parentsUntil(".box").find("video").get(0);
-        console.log(video.muted);
-        if (!video.muted) {
-            video.muted = true;
-        } else {
-            video.muted = false;
-        }
+/*  $(".sound").each((idx,ele)=>{
+    $(ele).click(()=>{
+      var video = $(ele).parentsUntil(".box").find("video").get(0);
+      console.log(video.muted);
+      if(!video.muted){
+        video.muted=true;
+      }else{
+        video.muted=false;
+      }
     });
-});
+  });*/

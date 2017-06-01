@@ -107,8 +107,23 @@
                 .icon {
                     color: rgb(255, 255, 255);
                     font-size: 2rem;
-                    &.sound {
-                        font-size: 2.2rem;
+                }
+                .sound {
+                    position: relative;
+                    .icon {
+                        position: absolute;
+                        top: -8rem/@fs;
+                        left: 0;
+                        font-size: 2.8rem;
+                    }
+                }
+                .mute {
+                    position: relative;
+                    .icon {
+                        position: absolute;
+                        top: 8rem/@fs;
+                        left: 0;
+                        font-size: 1.6rem;
                     }
                 }
                 .col-xs-5 {
@@ -133,7 +148,8 @@
                     line-height: 2.4;
                     color: rgb(255, 255, 255);
                 }
-                .play {
+                .play,
+                .sound {
                     svg:first-child {
                         display: block;
                     }
@@ -141,7 +157,8 @@
                         display: none;
                     }
                 }
-                .pause {
+                .pause,
+                .mute {
                     svg:first-child {
                         display: none;
                     }

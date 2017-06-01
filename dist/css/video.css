@@ -320,8 +320,23 @@ table {
   color: #ffffff;
   font-size: 2rem;
 }
-#contain .box .middle .VController .icon.sound {
-  font-size: 2.2rem;
+#contain .box .middle .VController .sound {
+  position: relative;
+}
+#contain .box .middle .VController .sound .icon {
+  position: absolute;
+  top: -0.32rem;
+  left: 0;
+  font-size: 2.8rem;
+}
+#contain .box .middle .VController .mute {
+  position: relative;
+}
+#contain .box .middle .VController .mute .icon {
+  position: absolute;
+  top: 0.32rem;
+  left: 0;
+  font-size: 1.6rem;
 }
 #contain .box .middle .VController .col-xs-5 {
   position: relative;
@@ -345,16 +360,20 @@ table {
   line-height: 2.4;
   color: #ffffff;
 }
-#contain .box .middle .VController .play svg:first-child {
+#contain .box .middle .VController .play svg:first-child,
+#contain .box .middle .VController .sound svg:first-child {
   display: block;
 }
-#contain .box .middle .VController .play svg:last-child {
+#contain .box .middle .VController .play svg:last-child,
+#contain .box .middle .VController .sound svg:last-child {
   display: none;
 }
-#contain .box .middle .VController .pause svg:first-child {
+#contain .box .middle .VController .pause svg:first-child,
+#contain .box .middle .VController .mute svg:first-child {
   display: none;
 }
-#contain .box .middle .VController .pause svg:last-child {
+#contain .box .middle .VController .pause svg:last-child,
+#contain .box .middle .VController .mute svg:last-child {
   display: block;
 }
 #contain .box .bottom {

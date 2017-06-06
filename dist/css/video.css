@@ -18,6 +18,14 @@ a {
   margin-left: 0;
   margin-right: 0;
 }
+.col-xs-4 .icon,
+.col-xs-5 .icon,
+.col-xs-3 .icon,
+.col-xs-1 .icon,
+.col-xs-7 .icon,
+.col-xs-12 .icon {
+  margin: 0 auto;
+}
 .progress {
   height: 4px;
   margin-bottom: 0;
@@ -326,16 +334,13 @@ table {
 #contain .box .middle .VController .sound .icon {
   position: absolute;
   top: -0.32rem;
-  left: 0;
-  font-size: 2.8rem;
+  left: 0.24rem;
+  font-size: 3.0rem;
 }
-#contain .box .middle .VController .mute {
-  position: relative;
-}
-#contain .box .middle .VController .mute .icon {
+#contain .box .middle .VController .sound .icon:last-child {
   position: absolute;
-  top: 0.32rem;
-  left: 0;
+  top: 0.36rem;
+  left: 0.56rem;
   font-size: 1.6rem;
 }
 #contain .box .middle .VController .col-xs-5 {

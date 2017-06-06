@@ -18,6 +18,14 @@ a {
   margin-left: 0;
   margin-right: 0;
 }
+.col-xs-4 .icon,
+.col-xs-5 .icon,
+.col-xs-3 .icon,
+.col-xs-1 .icon,
+.col-xs-7 .icon,
+.col-xs-12 .icon {
+  margin: 0 auto;
+}
 .progress {
   height: 4px;
   margin-bottom: 0;

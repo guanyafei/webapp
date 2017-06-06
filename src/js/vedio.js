@@ -78,9 +78,9 @@
       $(ele).click(function() {
           if ($(ele).parentsUntil(".box").find(".sound").hasClass("mute")) {
               $(ele).parentsUntil(".box").find(".sound").toggleClass("mute");
-              $(ele).parentsUntil(".box").find("video")[0].muted=true;
-          } else {
               $(ele).parentsUntil(".box").find("video")[0].muted=false;
+          } else {
+              $(ele).parentsUntil(".box").find("video")[0].muted=true;
               $(ele).parentsUntil(".box").find(".sound").toggleClass("mute");
           }
       });

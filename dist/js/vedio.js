@@ -85,9 +85,9 @@ $(".sound").each(function (idx, ele) {
     $(ele).click(function () {
         if ($(ele).parentsUntil(".box").find(".sound").hasClass("mute")) {
             $(ele).parentsUntil(".box").find(".sound").toggleClass("mute");
-            $(ele).parentsUntil(".box").find("video")[0].muted = true;
-        } else {
             $(ele).parentsUntil(".box").find("video")[0].muted = false;
+        } else {
+            $(ele).parentsUntil(".box").find("video")[0].muted = true;
             $(ele).parentsUntil(".box").find(".sound").toggleClass("mute");
         }
     });
@@ -143,6 +143,7 @@ $(".progress").each(function (idx, ele) {
 $(".fullscreen").each(function (idx, ele) {
     $(ele).click(function () {
         var video = $(ele).parentsUntil(".box").find("video").get(0);
+        video.controls = false;
         if (video.requestFullscreen) {
             video.requestFullscreen();
         } else if (video.webkitRequestFullScreen) {

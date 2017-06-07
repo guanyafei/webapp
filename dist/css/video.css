@@ -300,6 +300,10 @@ table {
 }
 #contain .box .middle {
   position: relative;
+  overflow: hidden;
+}
+#contain .box .middle video {
+  width: 100%;
 }
 #contain .box .middle span {
   position: absolute;
@@ -317,7 +321,7 @@ table {
 }
 #contain .box .middle .VController {
   position: absolute;
-  bottom: 0.2rem;
+  bottom: -3.52rem;
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);

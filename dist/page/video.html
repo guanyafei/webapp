@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -55,7 +55,7 @@
                     </div>
                     <div class="middle">
                         <div class="VBox">
-                            <video width="100%" poster="../images/vedio/bigImg.png">
+                            <video poster="../images/vedio/bigImg.png">
                                 <source src="../common/80.mp4" type="video/mp4">您的浏览器不支持Video标签。
                             </video>
                             <span class="badge"></span>
@@ -67,7 +67,7 @@
                                     <svg class="icon" aria-hidden="true">
                                         <use xlink:href="#icon-bofang"></use>
                                     </svg>
-                                     <svg class="icon" aria-hidden="true">
+                                    <svg class="icon" aria-hidden="true">
                                         <use xlink:href="#icon-zanting"></use>
                                     </svg>
                                 </div>
@@ -80,7 +80,7 @@
                                         </div>
                                     </div>
                                     <div class="shu">
-                                    |
+                                        |
                                     </div>
                                 </div>
                                 <div class="col-xs-2 text-center totalTime">
@@ -122,11 +122,53 @@
                         <div class="watcher">1355观看</div>
                     </div>
                     <div class="middle">
-                        <video width="100%" ondurationchange="setVedioTime()" poster="../images/vedio/bigImg.png">
-                            <source src="../common/80.mp4" type="video/mp4">您的浏览器不支持Video标签。
-                        </video>
-                        <span class="badge"></span>
-                        <img class="playBtn" src="../images/vedio/vedio.png">
+                        <div class="VBox">
+                            <video width="100%" ondurationchange="setVedioTime()" poster="../images/vedio/bigImg.png">
+                                <source src="../common/80.mp4" type="video/mp4">您的浏览器不支持Video标签。
+                            </video>
+                            <span class="badge"></span>
+                            <img class="playBtn" src="../images/vedio/vedio.png">
+                        </div>
+                        <div class="VController">
+                            <div class="w row">
+                                <div class="col-xs-1 text-center play">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-bofang"></use>
+                                    </svg>
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-zanting"></use>
+                                    </svg>
+                                </div>
+                                <div class="col-xs-2 text-center runTime">
+                                    00:00
+                                </div>
+                                <div class="col-xs-5 text-center">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                        </div>
+                                    </div>
+                                    <div class="shu">
+                                        |
+                                    </div>
+                                </div>
+                                <div class="col-xs-2 text-center totalTime">
+                                    20:16
+                                </div>
+                                <div class="col-xs-1 text-center sound">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-shengyin"></use>
+                                    </svg>
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-jingyin"></use>
+                                    </svg>
+                                </div>
+                                <div class="col-xs-1 text-right fullscreen">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-fangda15"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="bottom w clearfix">
                         <p>永安自行车放弃 “共享单车第一股” 桂冠始末</p>

@@ -1,5 +1,6 @@
 'use strict';
 
+var flag = false; //控制条是否显示标志
 //单击导航栏标签  样式改变
 var lis = $("nav ul li");
 
@@ -27,12 +28,19 @@ $(".content").delegate(".playBtn", "click", function () {
     $("video").each(function (idx, ele) {
         if (!ele.paused) {
             ele.load();
+            $(ele).parentsUntil(".box").children(".middle").css("backgroundColor", "white");
             setVedioTime();
             $(ele).siblings("img,span").fadeIn();
+            $(ele).parentsUntil(".box").find(".play").toggleClass("pause");
         }
     });
+    $(this).parentsUntil(".box").children(".middle").css("backgroundColor", "black");
     $(this).parent().children("img,span").fadeOut();
     $(this).parent().children("video")[0].play();
+    onVideoPlay($(this).parent().children("video")[0]);
+    $(this).parentsUntil(".box").find(".play").toggleClass("pause");
+    flag = true;
+    controllerOpt($(this).parent().children("video")[0], flag);
 });
 //视频加载后触发  获取视频长度并设置
 var setVedioTime = function setVedioTime() {
@@ -68,13 +76,17 @@ var formatTime = function formatTime(ele, vLength) {
 };
 //自定义视频控制按钮
 // 点击播放按钮  视频播放
+
 $(".play").each(function (idx, ele) {
     $(ele).click(function () {
         if ($(ele).parentsUntil(".box").find(".play").hasClass("pause")) {
             $(ele).parentsUntil(".box").find(".play").toggleClass("pause");
+            flag = false;
             $(ele).parentsUntil(".box").find("video")[0].pause();
+            $(ele).parentsUntil(".box").find(".playBtn").fadeIn();
         } else {
             $(ele).parentsUntil(".box").find("video")[0].play();
+            flag = true;
             onVideoPlay($(ele).parentsUntil(".box").find("video")[0]);
             $(ele).parentsUntil(".box").find(".play").toggleClass("pause");
         }
@@ -109,41 +121,18 @@ var onVideoPlay = function onVideoPlay(videoDom) {
     };
 };
 
-//点击跳转播放位置
+//点击进度条  跳转到播放位置
 $(".progress").each(function (idx, ele) {
-    ele.onclick = function (e) {
-        console.log(e.offsetX);
+    $(ele).click(function (e) {
         var percent = e.offsetX / ele.offsetWidth * 100 + '%';
         $(ele).children('.progress-bar').width(percent);
         $(ele).parentsUntil(".box").find("video")[0].currentTime = $(ele).parentsUntil(".box").find("video")[0].duration * e.offsetX / ele.offsetWidth;
-    };
+    });
 });
-//拖动竖条快进或后退视频
-/*$(".shu").each((idx, ele) => {
-    ele.onmousedown = event => {
-        var shu = $(ele).get(0);
-        var progress = $(ele).siblings(".progress").get(0);
-        var e = event || window.event;
-        //点击位置
-        var pageX = event.pageX || event.clientX + document.documentElement.scrollLeft;
-        // 点击瞬间 点击位置在progress中的位置
-        var tapX = pageX - progress.offsetLeft;
-        //竖条跟着触摸点移动
-        progress.onmousemove = event => {
-            var pageX = event.pageX || event.clientX + document.documentElement.scrollLeft;
-            shu.style.left = pageX - tapX + "px";
-        };
-        //触摸停止  移动停止
-        progress.onmouseup = function() {
-            ele.onmousemove = null;
-        };
-    };
-});*/
 //放大
 $(".fullscreen").each(function (idx, ele) {
     $(ele).click(function () {
         var video = $(ele).parentsUntil(".box").find("video").get(0);
-        video.controls = false;
         if (video.requestFullscreen) {
             video.requestFullscreen();
         } else if (video.webkitRequestFullScreen) {
@@ -157,15 +146,55 @@ $(".fullscreen").each(function (idx, ele) {
         }
     });
 });
-//声音控制
-/*  $(".sound").each((idx,ele)=>{
-    $(ele).click(()=>{
-      var video = $(ele).parentsUntil(".box").find("video").get(0);
-      console.log(video.muted);
-      if(!video.muted){
-        video.muted=true;
-      }else{
-        video.muted=false;
-      }
+//触摸video区域  控制条显示  5秒后消失
+var controllerOpt = function controllerOpt(ele, flag) {
+    $(ele).on('touchstart', function () {
+        if (flag) {
+            $(ele).parent().next(".VController").animate({ bottom: '0' }, "slow");
+        }
     });
-  });*/
+    $(ele).on('touchend', function () {
+        setTimeout(function () {
+            $(ele).parent().next(".VController").animate({ bottom: '-44px' }, "slow");
+        }, 1000000);
+    });
+};
+
+//拖动竖条快进或后退视频
+$(".shu").each(function (idx, ele) {
+    //手指触摸位置
+    var startX = 0;
+    //手指移动距离
+    var moveX = 0;
+    //移动距离
+    var distanceX = 0;
+    // 触摸开始
+    $(ele).on('touchstart', function (e) {
+        //记录触摸位置
+        startX = e.touches[0].clientX;
+    });
+    //触摸中
+    $(ele).on('touchmove', function (e) {
+        //移动期间视频暂停播放
+        $(ele).parentsUntil(".box").find("video")[0].pause();
+        //计算移动距离
+        moveX = e.touches[0].clientX - startX;
+        distanceX = moveX;
+        //修改竖条移动距离
+        //progress-bar当前宽度
+        var currentWidth = $(ele).prev(".progress").children(".progress-bar").width();
+        //progress宽度
+        var progressWidth = $(ele).prev(".progress").width();
+        distanceX = currentWidth + moveX;
+        var percent = distanceX / progressWidth * 100 + '%';
+        $(ele).prev(".progress").children(".progress-bar").width(percent);
+        // 竖条位置
+        ele.style.left = $(ele).parentsUntil(".box").find(".progress-bar").width() + "px";
+        $(ele).parentsUntil(".box").find("video")[0].currentTime = $(ele).parentsUntil(".box").find("video")[0].duration * distanceX / progressWidth;
+    });
+    //触摸结束
+    $(ele).on('touchend', function () {
+        //触摸结束 恢复播放
+        $(ele).parentsUntil(".box").find("video")[0].play();
+    });
+});

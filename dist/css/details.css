@@ -152,6 +152,11 @@ a.btn:focus {
 .slideUp.in {
   opacity: 1;
 }
+.progress-bar {
+  -webkit-transition: width 0s ease;
+  -o-transition: width 0s ease;
+  transition: width 0s ease;
+}
 body {
   font-size: 12.5px;
 }

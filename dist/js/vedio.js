@@ -85,13 +85,13 @@ var formatTime = function formatTime(ele, vLength) {
 // 点击播放按钮  视频播放
 var ctrPlayBtn = function ctrPlayBtn(ele) {
     $(ele).click(function () {
-        if ($(ele).parentsUntil(".box").find(".play").hasClass("pause")) {
-            $(ele).parentsUntil(".box").find(".play").toggleClass("pause");
+        if ($(ele).hasClass("pause")) {
+            $(ele).toggleClass("pause");
             $(ele).parentsUntil(".box").find("video")[0].pause();
         } else {
             $(ele).parentsUntil(".box").find("video")[0].play();
             onVideoPlay($(ele).parentsUntil(".box").find("video")[0]);
-            $(ele).parentsUntil(".box").find(".play").toggleClass("pause");
+            $(ele).toggleClass("pause");
         }
     });
 };
@@ -99,17 +99,17 @@ var ctrPlayBtn = function ctrPlayBtn(ele) {
 // 音量按钮设置
 var ctrSoundBtn = function ctrSoundBtn(ele) {
     $(ele).click(function () {
-        if ($(ele).parentsUntil(".box").find(".sound").hasClass("mute")) {
-            $(ele).parentsUntil(".box").find(".sound").toggleClass("mute");
+        if ($(ele).hasClass("mute")) {
+            $(ele).toggleClass("mute");
             $(ele).parentsUntil(".box").find("video")[0].muted = false;
         } else {
             $(ele).parentsUntil(".box").find("video")[0].muted = true;
-            $(ele).parentsUntil(".box").find(".sound").toggleClass("mute");
+            $(ele).toggleClass("mute");
         }
     });
 };
 
-//当前的播放位置发送改变时触发 改变进度条
+//当前的播放位置发生改变时触发 改变进度条
 var onVideoPlay = function onVideoPlay(videoDom) {
     videoDom.ontimeupdate = function () {
         //设置当前播放时间

@@ -20,7 +20,7 @@ $(window).scroll(() => {
 $(".content").delegate(".playBtn", "click", function() {
     $("video").each((idx, ele) => {
         ele.tag = true; //控制条显现标志   false隐藏
-        if (!ele.paused || ele.currentTime != 0) {
+        if (!ele.paused || ele.currentTime !=0) {
             $(ele).parentsUntil(".box").find(".VController").animate({ bottom: '-44px', opacity: '0' }, 0);
             ele.load();
             //修改控制条标志 控制条隐藏
@@ -78,31 +78,31 @@ var formatTime = (ele, vLength) => {
 // 点击播放按钮  视频播放
 var ctrPlayBtn = (ele) => {
     $(ele).click(() => {
-        if ($(ele).parentsUntil(".box").find(".play").hasClass("pause")) {
-            $(ele).parentsUntil(".box").find(".play").toggleClass("pause");
+        if ($(ele).hasClass("pause")) {
+            $(ele).toggleClass("pause");
             $(ele).parentsUntil(".box").find("video")[0].pause();
         } else {
             $(ele).parentsUntil(".box").find("video")[0].play();
             onVideoPlay($(ele).parentsUntil(".box").find("video")[0]);
-            $(ele).parentsUntil(".box").find(".play").toggleClass("pause");
+            $(ele).toggleClass("pause");
         }
     });
 };
 
 // 音量按钮设置
-var ctrSoundBtn = (ele) => {
-    $(ele).click(() => {
-        if ($(ele).parentsUntil(".box").find(".sound").hasClass("mute")) {
-            $(ele).parentsUntil(".box").find(".sound").toggleClass("mute");
+var ctrSoundBtn = (ele)=>{
+  $(ele).click(() => {
+        if ($(ele).hasClass("mute")) {
+            $(ele).toggleClass("mute");
             $(ele).parentsUntil(".box").find("video")[0].muted = false;
         } else {
             $(ele).parentsUntil(".box").find("video")[0].muted = true;
-            $(ele).parentsUntil(".box").find(".sound").toggleClass("mute");
+            $(ele).toggleClass("mute");
         }
     });
 };
 
-//当前的播放位置发送改变时触发 改变进度条
+//当前的播放位置发生改变时触发 改变进度条
 var onVideoPlay = (videoDom) => {
     videoDom.ontimeupdate = () => {
         //设置当前播放时间
@@ -119,8 +119,8 @@ var onVideoPlay = (videoDom) => {
 };
 
 //点击进度条  跳转到播放位置
-var ctrProgress = (ele) => {
-    $(ele).click((e) => {
+var ctrProgress = (ele)=>{
+  $(ele).click((e) => {
         var percent = e.offsetX / ele.offsetWidth * 100 + '%';
         $(ele).children('.progress-bar').width(percent);
         $(ele).parentsUntil(".box").find("video")[0].currentTime = $(ele).parentsUntil(".box").find("video")[0].duration * e.offsetX / ele.offsetWidth;
@@ -128,8 +128,8 @@ var ctrProgress = (ele) => {
 };
 
 //放大
-var ctrFullscreenBtn = (ele) => {
-    $(ele).click(() => {
+var ctrFullscreenBtn = (ele)=>{
+  $(ele).click(() => {
         var video = $(ele).parentsUntil(".box").find("video").get(0);
         if (video.requestFullscreen) {
             video.requestFullscreen();
@@ -160,8 +160,8 @@ var controllerOpt = (ele) => {
 };
 
 //拖动竖条快进或后退视频
-var ctrShuBtn = (ele) => {
-    //手指触摸位置
+var ctrShuBtn = (ele)=>{
+      //手指触摸位置
     var startX = 0;
     //手指移动距离
     var moveX = 0;
@@ -195,4 +195,4 @@ var ctrShuBtn = (ele) => {
         //触摸结束 恢复播放
         $(ele).parentsUntil(".box").find("video")[0].play();
     });
-};
+  };

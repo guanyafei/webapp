@@ -306,6 +306,12 @@ table {
   font-weight: 100;
   margin-top: 1rem;
 }
+.index .tab-content {
+  overflow: hidden;
+}
+.index .tab-content .tab-box .tab-pane {
+  float: left;
+}
 .index .banner {
   width: 100%;
 }

@@ -280,42 +280,45 @@ table {
   width: 1.52rem;
   height: 1.6rem;
 }
-#contain .box {
+#contain .tab-content {
+  overflow: hidden;
+}
+#contain .tab-content .box {
   margin-top: 0.4rem;
   background-color: #ffffff;
 }
-#contain .box .top {
+#contain .tab-content .box .top {
   padding: 0.64rem 0;
 }
-#contain .box .top .logo {
+#contain .tab-content .box .top .logo {
   padding-left: 0.4rem;
   float: left;
 }
-#contain .box .top .logo img {
+#contain .tab-content .box .top .logo img {
   width: 1.6rem;
   height: 1.6rem;
 }
-#contain .box .top .logo span {
+#contain .tab-content .box .top .logo span {
   color: #b4b4b4;
   padding-left: 0.8rem;
 }
-#contain .box .top .watcher {
+#contain .tab-content .box .top .watcher {
   float: right;
   color: #b4b4b4;
 }
-#contain .box .middle {
+#contain .tab-content .box .middle {
   position: relative;
   overflow: hidden;
 }
-#contain .box .middle video {
+#contain .tab-content .box .middle video {
   width: 100%;
 }
-#contain .box .middle span {
+#contain .tab-content .box .middle span {
   position: absolute;
   bottom: 0.64rem;
   right: 0.8rem;
 }
-#contain .box .middle img:last-child {
+#contain .tab-content .box .middle img:last-child {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -324,7 +327,7 @@ table {
   width: 3.44rem;
   height: 3.44rem;
 }
-#contain .box .middle .VController {
+#contain .tab-content .box .middle .VController {
   opacity: 0;
   position: absolute;
   bottom: -3.52rem;
@@ -334,30 +337,30 @@ table {
   padding: 0.56rem 0;
   line-height: 1;
 }
-#contain .box .middle .VController .icon {
+#contain .tab-content .box .middle .VController .icon {
   color: #ffffff;
   font-size: 2rem;
 }
-#contain .box .middle .VController .sound {
+#contain .tab-content .box .middle .VController .sound {
   position: relative;
 }
-#contain .box .middle .VController .sound .icon {
+#contain .tab-content .box .middle .VController .sound .icon {
   position: absolute;
   top: -0.32rem;
   left: 0.24rem;
   font-size: 3.0rem;
 }
-#contain .box .middle .VController .sound .icon:last-child {
+#contain .tab-content .box .middle .VController .sound .icon:last-child {
   position: absolute;
   top: 0.36rem;
   left: 0.56rem;
   font-size: 1.6rem;
 }
-#contain .box .middle .VController .col-xs-5 {
+#contain .tab-content .box .middle .VController .col-xs-5 {
   position: relative;
   height: 1.92rem;
 }
-#contain .box .middle .VController .col-xs-5 .shu {
+#contain .tab-content .box .middle .VController .col-xs-5 .shu {
   color: #ffffff;
   position: absolute;
   top: 50%;
@@ -365,45 +368,48 @@ table {
   margin-top: -0.4rem;
   font-weight: 700;
 }
-#contain .box .middle .VController .progress {
+#contain .tab-content .box .middle .VController .progress {
   position: absolute;
   width: 100%;
   top: 50%;
 }
-#contain .box .middle .VController .runTime,
-#contain .box .middle .VController .totalTime {
+#contain .tab-content .box .middle .VController .runTime,
+#contain .tab-content .box .middle .VController .totalTime {
   line-height: 2.4;
   color: #ffffff;
 }
-#contain .box .middle .VController .play svg:first-child,
-#contain .box .middle .VController .sound svg:first-child {
+#contain .tab-content .box .middle .VController .play svg:first-child,
+#contain .tab-content .box .middle .VController .sound svg:first-child {
   display: block;
 }
-#contain .box .middle .VController .play svg:last-child,
-#contain .box .middle .VController .sound svg:last-child {
+#contain .tab-content .box .middle .VController .play svg:last-child,
+#contain .tab-content .box .middle .VController .sound svg:last-child {
   display: none;
 }
-#contain .box .middle .VController .pause svg:first-child,
-#contain .box .middle .VController .mute svg:first-child {
+#contain .tab-content .box .middle .VController .pause svg:first-child,
+#contain .tab-content .box .middle .VController .mute svg:first-child {
   display: none;
 }
-#contain .box .middle .VController .pause svg:last-child,
-#contain .box .middle .VController .mute svg:last-child {
+#contain .tab-content .box .middle .VController .pause svg:last-child,
+#contain .tab-content .box .middle .VController .mute svg:last-child {
   display: block;
 }
-#contain .box .bottom {
+#contain .tab-content .box .bottom {
   padding-bottom: 1.44rem;
 }
-#contain .box .bottom p {
+#contain .tab-content .box .bottom p {
   padding: 0.96rem 0;
 }
-#contain .box .bottom .time {
+#contain .tab-content .box .bottom .time {
   color: #a6a6a6;
   float: left;
 }
-#contain .box .bottom .share {
+#contain .tab-content .box .bottom .share {
   color: #a6a6a6;
   float: right;
+}
+#contain .tab-content .tab-box .tab-pane {
+  float: left;
 }
 #contain .footer {
   background-color: #ffffff;

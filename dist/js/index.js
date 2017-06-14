@@ -1,16 +1,18 @@
 "use strict";
 
 //hammer实现触摸拖动轮播图图片
-var hm = new Hammer(document.getElementById("carousel-example-generic"));
-hm.on("swipeleft", function () {
-    $('#carousel-example-generic').carousel('next');
+$(".tab-content").delegate(".carousel", "touchstart", function () {
+    var _this = this;
+
+    var hm = new Hammer(this);
+    hm.on("panleft", function (e) {
+        $(_this).carousel('next');
+    });
+    hm.on("panright", function (e) {
+        $(_this).carousel('prev');
+    });
 });
-hm.on("swiperight", function () {
-    $('#carousel-example-generic').carousel('prev');
-});
-// $('#carousel-example-generic').on('slide.bs.carousel', function () {
-//   return false;
-// })
+
 //窗口卷去部分大于banner偏移量 返回图标展示
 $(window).scroll(function () {
     if (document.body.scrollTop > $(".nav").offset().top) {
@@ -19,19 +21,7 @@ $(window).scroll(function () {
         $(".back").fadeOut("normal");
     }
 });
-//单击导航栏标签  样式改变
-var lis = $("li[role='presentation']");
 
-var _loop = function _loop(i) {
-    var that = lis[i];
-    $(that).bind('click', function () {
-        $(that).children('a').addClass('active').parent().siblings().children('a').removeClass('active');
-    });
-};
-
-for (var i = 0; i < lis.length; i++) {
-    _loop(i);
-}
 tabTouch();
 //左右滑动标签面板 
 
@@ -39,8 +29,10 @@ function tabTouch() {
     // 一. 获取变量
     //手指触摸位置
     var startX = 0;
+    var startY = 0;
     //手指移动距离
     var moveX = 0;
+    var moveY = 0;
     //导航栏标签
     var lis = $("li[role='presentation']");
     //面板个数
@@ -63,8 +55,9 @@ function tabTouch() {
     // 封装 需要重复出现的代码
     // 点击nav标签跳转到相应面板
     var navClick = function navClick() {
-        var _loop2 = function _loop2(i) {
+        var _loop = function _loop(i) {
             var that = lis[i];
+            //单击导航栏标签  样式改变
             $(that).bind('click', function () {
                 $(that).children('a').addClass('active').parent().siblings().children('a').removeClass('active');
                 clearTransition();
@@ -74,7 +67,7 @@ function tabTouch() {
         };
 
         for (var i = 0; i < lis.length; i++) {
-            _loop2(i);
+            _loop(i);
         }
     };
     // 修改tabBox的移动距离
@@ -84,7 +77,7 @@ function tabTouch() {
 
     // 开启过渡
     var setTransition = function setTransition() {
-        tabBox.css({ transition: "all .3s" });
+        tabBox.css({ transition: "all .6s" });
     };
 
     // 关闭过渡
@@ -98,6 +91,8 @@ function tabTouch() {
     tabBox.on('touchstart', function (event) {
         // 记录
         startX = event.touches[0].clientX;
+        startY = event.touches[0].clientY;
+
         // 关闭过渡效果
         clearTransition();
     });
@@ -106,26 +101,39 @@ function tabTouch() {
     tabBox.on('touchmove', function (event) {
         // 计算移动距离
         moveX = event.touches[0].clientX - startX;
+        moveY = event.touches[0].clientY - startY;
+        if (event.target.className === "carousel-img" || moveY < -30 || moveY > 30) {
+            return;
+        }
+
         // 修改tabBox的移动距离
-        if (index >= 0 && index <= count - 1) {
+        if (index === 0 && moveX > 0) {
+            setTransform(index);
+        } else if (index === count - 1 && moveX < 0) {
+            setTransform(index * tabWidth * -1);
+        } else {
             setTransform(moveX + index * tabWidth * -1);
         }
     });
 
     // 触摸结束
     tabBox.on('touchend', function (event) {
-        console.log('end');
         // 判断 是否需要吸附回去 小于 1/4宽度 吸附回去 大于 1/4宽度 跳一张
         // 计算绝对值
-        if (Math.abs(moveX) > tabWidth / 4) {
-            if (moveX > 0) {
-                index--;
-                index = index < 0 ? 0 : index;
-            } else {
-                index++;
-                index = index > count - 1 ? count - 1 : index;
+        if (event.target.className === "carousel-img") {
+            return;
+        }
+        if (moveY > -30 && moveY < 30) {
+            if (Math.abs(moveX) > tabWidth / 5) {
+                if (moveX > 0) {
+                    index--;
+                    index = index < 0 ? 0 : index;
+                } else {
+                    index++;
+                    index = index > count - 1 ? count - 1 : index;
+                }
             }
-        };
+        }
         // 开启过渡效果
         setTransition();
         // 吸附回去 

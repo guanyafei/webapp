@@ -20,16 +20,18 @@
     });
 
     tabTouch();
-    //左右滑动标签面板 
 
+    //左右滑动标签面板 
     function tabTouch() {
-        // 一. 获取变量
+        //获取变量
         //手指触摸位置
         var startX = 0;
         var startY = 0;
         //手指移动距离
         var moveX = 0;
         var moveY = 0;
+        //滑动方向判断阀值
+        var thresholdVal = 30;
         //导航栏标签
         var lis = $("li[role='presentation']");
         //面板个数
@@ -95,7 +97,7 @@
             // 计算移动距离
             moveX = event.touches[0].clientX - startX;
             moveY = event.touches[0].clientY - startY;
-            if (event.target.className === "carousel-img" || moveY < -30 || moveY > 30) {
+            if (event.target.className === "carousel-img" || moveY < -thresholdVal || moveY > thresholdVal) {
                 return;
             }
 
@@ -116,7 +118,7 @@
             if (event.target.className === "carousel-img") {
                 return;
             }
-            if (moveY > -30 && moveY < 30) {
+            if (moveY > -thresholdVal && moveY < thresholdVal) {
                 if (Math.abs(moveX) > (tabWidth / 5)) {
                     if (moveX > 0) {
                         index--;

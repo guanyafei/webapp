@@ -1,0 +1,465 @@
+html {
+  font-size: 12.5px;
+}
+.container-fluid {
+  margin: 0 0;
+  padding: 0 0;
+}
+a {
+  color: #000000;
+}
+.col-xs-4,
+.col-xs-5,
+.col-xs-3,
+.col-xs-1,
+.col-xs-7,
+.col-xs-12 {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.col-xs-4 .icon,
+.col-xs-5 .icon,
+.col-xs-3 .icon,
+.col-xs-1 .icon,
+.col-xs-7 .icon,
+.col-xs-12 .icon {
+  margin: 0 auto;
+}
+.progress {
+  height: 4px;
+  margin-bottom: 0;
+  overflow: hidden;
+  background-color: #969696;
+  border-radius: 0;
+  -webkit-box-shadow: 0;
+  box-shadow: 0;
+}
+.progress-bar-success {
+  background-color: #ffffff;
+}
+.navbar-fixed-bottom,
+.navbar-fixed-top {
+  border-width: 0 0 0;
+  min-height: 0;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  border: 0;
+}
+.nav-tabs {
+  border-bottom: 0;
+}
+.nav-tabs > li {
+  float: left;
+  margin-bottom: 0;
+}
+.nav-tabs > li > a {
+  margin-right: 0;
+  line-height: 0;
+  border: 0;
+  border-radius: 0 0 0 0;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  color: #555;
+  cursor: default;
+  background-color: transparent;
+  border: 0;
+  border-bottom-color: transparent;
+}
+a.list-group-item:hover,
+a.list-group-item:focus {
+  background-color: transparent;
+}
+a.btn {
+  padding: 0;
+  border: 0;
+  outline: 0 0 0 0;
+  font-size: 1rem;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: 0;
+  outline-offset: 0;
+}
+a.btn:hover,
+a.btn:focus {
+  background-color: transparent;
+}
+.btn:active,
+.btn.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
+}
+.modal .modal-dialog {
+  position: absolute;
+  bottom: -3.52rem;
+  left: 0;
+  margin: 0;
+  width: 100%;
+}
+.modal .modal-dialog .modal-content {
+  border-radius: 0;
+  border: 0;
+}
+.modal .modal-dialog .modal-content .modal-body {
+  padding: 0;
+}
+.modal .modal-dialog .modal-content .modal-footer {
+  padding: 1.44rem 0;
+  text-align: center;
+}
+.modal .modal-dialog .modal-content .modal-footer .close {
+  font-size: inherit;
+  font-weight: 100;
+  float: none;
+  opacity: 1;
+}
+.modal.slideUp .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+}
+.modal-backdrop.slideUp {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.slideUp {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+.slideUp.in {
+  opacity: 1;
+}
+.progress-bar {
+  -webkit-transition: width 0s ease;
+  -o-transition: width 0s ease;
+  transition: width 0s ease;
+}
+body {
+  font-size: 12.5px;
+}
+.w {
+  margin: 0 0.8rem;
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+}
+fieldset,
+img,
+input,
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+select,
+input,
+button {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  margin: 0;
+}
+textarea {
+  resize: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+}
+.home {
+  padding: 3.2rem 0 4.4rem 0;
+}
+.home .header {
+  height: 3.04rem;
+  background-color: pink;
+  position: relative;
+}
+.home .header .logo {
+  text-align: center;
+  line-height: 3.04rem;
+}
+.home .header .logo img {
+  width: 7.52rem;
+  height: 1.6rem;
+}
+.home .header .search {
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  margin-top: -0.8rem;
+}
+.home .header .search a {
+  display: inline-block;
+}
+.home .header .search a img {
+  width: 1.52rem;
+  height: 1.6rem;
+}
+.home .nav {
+  background-color: #f7f7f7;
+  position: relative;
+}
+.home .nav div {
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.home .nav div ul {
+  width: 24rem;
+}
+.home .nav div ul li {
+  float: left;
+}
+.home .nav div ul li a {
+  display: block;
+  padding: 0 0.88rem;
+  position: relative;
+  height: 3.2rem;
+  line-height: 3.2rem;
+}
+.home .nav div ul li a i {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -0.48rem;
+  height: 0.04rem;
+  width: 0.96rem;
+}
+.home .nav div ul li a.active {
+  color: red;
+  font-size: 1.2rem;
+}
+.home .nav div ul li a.active > i {
+  border: 0.04rem solid red;
+}
+.home .nav div ul li a:hover {
+  text-decoration: none;
+}
+.home .nav .go {
+  width: 4.8rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../images/index/mask.png) no-repeat;
+}
+.home .nav .go span {
+  float: right;
+  margin-right: 1.2rem;
+  color: red;
+  font-weight: 100;
+  margin-top: 1rem;
+}
+.home .tab-content {
+  overflow: hidden;
+}
+.home .tab-content .tab-box .tab-pane {
+  float: left;
+}
+.home .banner {
+  width: 100%;
+}
+.home .banner .carousel .carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  width: 100%;
+  margin-left: 0;
+  padding: 0.64rem 0.8rem;
+  line-height: 1;
+  list-style: none;
+  text-align: right;
+}
+.home .banner .carousel .carousel-indicators li {
+  width: 0.24rem;
+  height: 0.24rem;
+  border-radius: 0.4rem;
+  background-color: white;
+}
+.home .banner .carousel .carousel-indicators li.active {
+  width: 0.48rem;
+  height: 0.48rem;
+}
+.home .banner .carousel-inner .item .carousel-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  line-height: 1;
+  color: white;
+  padding: 0.64rem 0.8rem;
+  text-align: left;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.home .box .outer {
+  overflow: hidden;
+  padding: 1.2rem 0;
+  border-bottom: 0.04rem solid #f7f7f7;
+}
+.home .box .outer .content {
+  height: 6rem;
+}
+.home .box .outer .content .imgs {
+  float: left;
+}
+.home .box .outer .content .imgs img {
+  width: 8.4rem;
+}
+.home .box .outer .content .news {
+  height: 6rem;
+  width: 100%;
+  padding-left: 9.68rem;
+}
+.home .box .outer .content .news .top {
+  height: 4.96rem;
+}
+.home .box .outer .content .news .bottom {
+  height: calc(1.04rem);
+  color: #b4b4b4;
+}
+.home .box .outer .content .news .bottom .category {
+  float: left;
+}
+.home .box .outer .content .news .bottom .time {
+  float: right;
+}
+.home .box .outer .bigTop {
+  margin-bottom: 1.2rem;
+}
+.home .box .outer .bigImg {
+  width: 100%;
+  height: 14rem;
+}
+.home .box .outer .bigTime {
+  color: #b4b4b4;
+  margin-top: 1.2rem;
+}
+.home .box .outer .bigTime .category {
+  float: left;
+}
+.home .box .outer .bigTime .time {
+  float: right;
+}
+.home .box .outer .middleImg img {
+  width: 9.12rem;
+  height: 6.88rem;
+  margin: 0 auto;
+}
+.home .links {
+  background-color: #595959;
+  padding: 0.72rem 0;
+}
+.home .links a {
+  display: inline-block;
+}
+.home .links span {
+  display: inline-block;
+  margin: 0.48rem 1.2rem;
+  color: #b0b0b0;
+}
+.home .links p {
+  margin: 0 1.2rem;
+  color: #898989;
+}
+.home .footer a {
+  display: inline-block;
+  width: 33.333333333%;
+  float: left;
+  padding-top: 2.72rem;
+  padding-bottom: 0.48rem;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  color: #929292;
+}
+.home .footer a i.glyphicon {
+  position: absolute;
+  top: 0.56rem;
+  left: 50%;
+  margin-left: -0.92rem;
+  font-size: 1.9rem;
+}
+.home .footer a:first-child i.glyphicon {
+  margin-left: -1.08rem;
+  font-size: 2.2rem;
+}
+.home .back {
+  display: none;
+  position: fixed;
+  right: 0.8rem;
+  bottom: 6.4rem;
+}
+.home .back a {
+  display: block;
+  width: 3.12rem;
+  height: 3.12rem;
+  border-radius: 50%;
+  background-color: rgba(126, 129, 131, 0.7);
+  position: relative;
+}
+.home .back a .icon {
+  color: #ffffff;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -1rem 0 0 -1rem;
+}

@@ -1,5 +1,16 @@
 @import "./variables.less";
 .index {
+    //加载图标
+    .loading{
+        position: absolute;
+        width:100rem/@fs;
+        height:100rem/@fs;
+        left:50%;
+        top:50%;
+        margin-left: -50rem/@fs;
+        margin-top: -50rem/@fs;
+        display: none;
+    }
     // 尾部
     .footer {
         a {
@@ -19,11 +30,37 @@
                 margin-left: -23rem/@fs;
                 font-size: 1.9rem;
             }
+            &.active{   
+            color:rgb(231,70,59);
+            }
         }
         a:first-child {
             i.glyphicon {
                 margin-left: -27rem/@fs;
                 font-size: 2.2rem;
+            }
+        }
+    }
+    //返回图标
+    .back {
+        display: none;
+        position: fixed;
+        right: 20rem/@fs;
+        bottom: 160rem/@fs;
+        a {
+            display: block;
+            width: 78rem/@fs;
+            height: 78rem/@fs;
+            border-radius: 50%;
+            background-color: rgba(126, 129, 131, .7);
+            position: relative;
+            .icon {
+                color: rgb(255, 255, 255);
+                font-size: 2rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -25rem/@fs 0 0 -25rem/@fs;
             }
         }
     }

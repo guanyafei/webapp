@@ -5,6 +5,7 @@ createIframe("home");
 
 window.onload = function () {
     clickLoad();
+    backController();
 };
 //创建内联框架
 function createIframe(pageName) {
@@ -26,6 +27,7 @@ function removeIframe() {
     var parentDom = document.getElementsByClassName("index")[0];
     var ifm = document.getElementById("iframepage");
     parentDom.removeChild(ifm);
+    $(".back").fadeOut("normal");
 }
 
 //点击底部导航  框架加载相应页
@@ -34,9 +36,34 @@ function clickLoad() {
         $(ele).click(function () {
             if (idx != 2) {
                 removeIframe();
-                var pageName = $(ele).attr("class");
-                createIframe(pageName);
+                var pageName = $(ele).attr("myAttr");
+                $(ele).addClass('active').siblings().removeClass("active");
+                $(".loading").show();
+                setTimeout(function () {
+                    createIframe(pageName);
+                    backController();
+                    $(".loading").hide(200);
+                }, 1000);
             }
         });
     });
 }
+//窗口卷去部分大于100 返回图标展示
+function backController() {
+    var ifm = document.getElementById('iframepage');
+    var ifmScrollTop;
+    ifm.contentWindow.onscroll = function () {
+        ifmScrollTop = ifm.contentWindow.document.body.scrollTop;
+        if (ifmScrollTop > 100) {
+            $(".back").fadeIn("slow");
+        } else {
+            $(".back").fadeOut("normal");
+        }
+    };
+}
+
+//点击back图标 窗口回到顶部
+$(".back").click(function () {
+    var ifm = document.getElementById('iframepage');
+    ifm.contentWindow.scrollTo(0, 0);
+});

@@ -21,10 +21,11 @@
 
 <body>
     <div class="container-fluid index">
+    <img src="./images/index/spin.gif" alt="" class="loading">
         <!-- 尾部 -->
         <nav class="navbar navbar-default navbar-fixed-bottom">
             <div class="footer container">
-                <a href="javascript:;" class="home">
+                <a href="javascript:;" class="active" myAttr="home">
                首页
                <i class="glyphicon">
                    <svg class="icon" aria-hidden="true">
@@ -32,7 +33,7 @@
                    </svg>
                </i>
             </a>
-                <a href="javascript:;" class="video">
+                <a href="javascript:;"  myAttr="video">
             视频
             <i class="glyphicon">
                 <svg class="icon" aria-hidden="true">
@@ -50,6 +51,14 @@
             </a>
             </div>
         </nav>
+        <!-- 返回图标 -->
+        <div class="back">
+            <a href="javascript:;">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-xiangshangjiantou"></use>
+                </svg>
+            </a>
+        </div>
     </div>
 </body>
 <script src="./common/jquery-3.2.1.min.js"></script>

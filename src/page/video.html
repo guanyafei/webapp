@@ -21,7 +21,6 @@
 </head>
 
 <body>
-    <a href="#" id="goTop"></a>
     <div class="container-fluid" id="contain">
         <!-- 导航 -->
         <div class="box">
@@ -36,7 +35,7 @@
                     </ul>
                 </div>
                 <div class="search">
-                    <a href="../page/search.html">
+                    <a href="../page/search.html" target="_parent">
                         <img src="../images/vedio/search.png">
                     </a>
                 </div>
@@ -44,7 +43,7 @@
         </div>
         <!-- 内容 -->
         <div class="content tab-content">
-            <div class="tab-box">
+            <div class="tab-box clearfix">
                 <div role="tabpanel" class="tab-pane active" id="JX">
                     <div class="box">
                         <div class="top w clearfix">
@@ -332,43 +331,6 @@
                 </div>
             </div>
         </div>
-        <!-- 尾部 -->
-        <nav class="navbar navbar-default navbar-fixed-bottom">
-            <div class="footer container">
-                <a href="../index.html">
-               首页
-               <i class="glyphicon">
-                   <svg class="icon" aria-hidden="true">
-                     <use xlink:href="#icon-gouwuxinyong"></use>
-                   </svg>
-               </i>
-            </a>
-                <a href="./video.html">
-            视频
-            <i class="glyphicon">
-                <svg class="icon" aria-hidden="true">
-                   <use xlink:href="#icon-shipinxian"></use>
-                </svg>
-            </i>
-            </a>
-                <a href="./loginOrout.html">
-            我
-            <i class="glyphicon">
-                <svg class="icon" aria-hidden="true">
-                   <use xlink:href="#icon-wode"></use>
-                </svg>
-            </i>
-            </a>
-            </div>
-        </nav>
-        <!-- 返回图标 -->
-        <div class="back">
-            <a href="#goTop">
-                <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-xiangshangjiantou"></use>
-                </svg>
-            </a>
-        </div>
         <!-- Modal -->
         <div class="modal slideUp" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
@@ -403,6 +365,7 @@
 <script src="../common/jquery-3.2.1.min.js"></script>
 <script src="../common/bootstrap/js/bootstrap.min.js"></script>
 <script src="../fonts/iconfont.js"></script>
+<script src="../js/common.js"></script>
 <script src="../js/vedio.js"></script>
 
 </html>

@@ -102,7 +102,7 @@ a.btn:focus {
 }
 .modal .modal-dialog {
   position: absolute;
-  bottom: -3.52rem;
+  bottom: 0;
   left: 0;
   margin: 0;
   width: 100%;
@@ -435,28 +435,6 @@ table {
 #contain .footer a:first-child i.glyphicon {
   margin-left: -1.08rem;
   font-size: 2.2rem;
-}
-#contain .back {
-  display: none;
-  position: fixed;
-  right: 0.8rem;
-  bottom: 6.4rem;
-}
-#contain .back a {
-  display: block;
-  width: 3.12rem;
-  height: 3.12rem;
-  border-radius: 50%;
-  background-color: rgba(126, 129, 131, 0.7);
-  position: relative;
-}
-#contain .back a .icon {
-  color: #ffffff;
-  font-size: 2rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -1rem 0 0 -1rem;
 }
 #contain .shareIcon {
   border-bottom: 0.04rem solid #f0f0f0;

@@ -205,4 +205,4 @@ var ctrShuBtn = function ctrShuBtn(ele) {
 };
 
 //左右滑动标签面板 
-tabTouch();
+slideTab();

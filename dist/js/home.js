@@ -13,13 +13,6 @@ $(".tab-content").delegate(".carousel", "touchstart", function () {
     });
 });
 
-//窗口卷去部分大于banner偏移量 返回图标展示
-// $(window).scroll(() => {
-//     if (document.body.scrollTop > $(".nav").offset().top) {
-//         $(".back").fadeIn("slow");
-//     } else {
-//         $(".back").fadeOut("normal");
-//     }
-// });
 //左右滑动标签面板 
-tabTouch();
+// tabTouch();
+slideTab();

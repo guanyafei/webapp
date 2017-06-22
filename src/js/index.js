@@ -1,6 +1,5 @@
 //页面默认加载home页
 createIframe("home");
-
 window.onload = function() {
     clickLoad();
     backController();
@@ -25,7 +24,7 @@ function removeIframe() {
     var parentDom = document.getElementsByClassName("index")[0];
     var ifm = document.getElementById("iframepage");
     parentDom.removeChild(ifm);
-    $(".back").fadeOut("normal");
+    $(".back").fadeOut("fast");
 }
 
 //点击底部导航  框架加载相应页
@@ -41,7 +40,7 @@ function clickLoad() {
                     createIframe(pageName);
                     backController();
                     $(".loading").hide(200);
-                }, 1000);
+                }, 800);
             }
         });
     });

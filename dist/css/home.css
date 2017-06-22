@@ -309,7 +309,7 @@ table {
 .home .tab-content {
   overflow: hidden;
 }
-.home .tab-content .tab-box .tab-pane {
+.home .tab-content .tab-pane {
   float: left;
 }
 .home .banner {

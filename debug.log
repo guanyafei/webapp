@@ -4,3 +4,4 @@
 [0616/133020.442:ERROR:process_reader_win.cc(233)] ReadMemory at 0x7fee87529b8 of 12 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
 [0616/133020.442:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
 [0616/133020.442:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0623/145430.898:ERROR:http_transport_win.cc(214)] WinHttpSendRequest: 操作超时  (0x2ee2)

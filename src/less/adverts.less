@@ -1,0 +1,89 @@
+@import "./variables.less";
+.adverts {
+    // 头部
+    background-color: @bodyColor;
+    .header {
+        background-color: @comColor;
+        text-align: center;
+        padding: 30rem/@fs 0;
+        margin-bottom: 22rem/@fs;
+        span.glyphicon {
+            float: left;
+            margin-left: 20rem/@fs;
+        }
+    }
+    // 广告
+    .main {
+        background-color: @comColor;
+        .standard {
+            margin: 30rem/@fs 0;
+            .row {
+                margin-right: 0;
+                margin-left: 0;
+                .price {
+                    color: rgb(231, 70, 59);
+                }
+                >div {
+                    padding: 15rem/@fs 20rem/@fs;
+                }
+            }
+            .space {
+                text-align: center;
+                .outer{
+                    
+                    height:600rem/@fs;
+                    overflow:hidden;
+                    overflow-y: scroll;  
+                }
+                .inner {
+                    position: relative;
+                    padding: 30rem/@fs 0;
+                    border-bottom: 1rem/@fs solid rgb(247, 247, 247);
+                    .bigTop {
+                        margin-bottom: 30rem/@fs;
+                    }
+                    .bigImg {
+                        width: 710rem/@fs;
+                        height: 350rem/@fs;
+                    }
+                    .bigTime {
+                        color: rgb(180, 180, 180);
+                        margin-top: 30rem/@fs;
+                        .category {
+                            float: left;
+                            border: 1rem/@fs solid rgb(231, 70, 59);
+                            border-radius: 20%;
+                            color: rgb(231, 70, 59);
+                        }
+                        .time {
+                            float: right;
+                        }
+                    }
+                    .mask {
+                        width: 100%;
+                        height: 95%;
+                        border: 1rem/@fs solid rgb(231, 70, 59);
+                        background-color: rgba(0, 0, 0, .5);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        text-align: center;
+                        >span {
+                            display: inline-block;
+                            color: rgb(255, 255, 255);
+                            font-size: 2rem;
+                            margin-top: 220rem/@fs;
+                            // line-height: 1;
+                        }
+                    }
+                }
+                >.btn {
+                    background-color: rgb(228, 82, 72);
+                    border-radius: 2rem;
+                    padding:14rem/@fs 20rem/@fs;
+                    margin-top: 70rem/@fs;
+                }
+            }
+        }
+    }
+}

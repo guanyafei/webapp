@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../common/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=G9uEYYOyOqUyYeSEhoZzPvsGGPIKFdNa"></script>
+    <title>CEOCIO</title>
+  </style>
+</head>
+
+<body>
+    <div class="container-fluid contact">
+<!-- 头部 -->
+        <div class="header">
+            <span class="glyphicon glyphicon-menu-left"></span>联系我们
+        </div>
+         <!-- 地址 -->
+      <div class="address w clearfix">
+        <p>地址：北京市海淀区翠微中里14号楼</p>
+        <p>电话：010-86890000</p>
+        <p>传真：010-86890000</p>
+        <p>邮编：100000</p>
+      </div>
+      <!-- 邮箱 -->
+      <div class="email w clearfix">
+        <p>内容联系：tougao@post.com</p>
+        <p>市场合作：bds@ceociopost.com</p>
+        <p>应聘职位：jobs@ceociopost.com</p>
+      </div>
+  <div id="allmap"></div>
+</div>
+</body>
+<script src="../common/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+  // 百度地图API功能
+  var map = new BMap.Map("allmap");            // 创建Map实例
+  map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
+  map.disableDragging();
+  var local = new BMap.LocalSearch(map, {
+    renderOptions: {map: map}
+  });
+  local.search("计世传媒");
+
+
+// 返回上一页
+$('.glyphicon').click(function(){
+    window.history.go(-1);
+});
+</script>
+</html>
